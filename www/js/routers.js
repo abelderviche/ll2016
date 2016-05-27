@@ -12,7 +12,7 @@
               controller  : 'subcatalogoCtrl'
           })
           .when('/detalle/:id_detalle', {
-              templateUrl : 'detalle2.html',
+              templateUrl : 'detalle.html',
               controller  : 'detalleCtrl'
           })
           .when('/filtros', {
