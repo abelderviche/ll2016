@@ -12,7 +12,9 @@ aplicacion.filter('getById', function() {
 
 
 aplicacion.controller('catalogoCtrl',['$scope','$location','$http', function($scope, $location,$http){
-
+     // localStorage.setItem("rc2016_firstime","0");
+      //localStorage.setItem("rc2016_nombre","");
+      //localStorage.setItem("rc2016_email","");
     if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
       $scope.loginview = true;
     } else {  
@@ -20,7 +22,7 @@ aplicacion.controller('catalogoCtrl',['$scope','$location','$http', function($sc
     }
 
     $scope.submitForm = function() {
-      //console.log($scope.user.name);  
+      console.log($scope.user.name);  
       localStorage.setItem("rc2016_firstime","1");
       localStorage.setItem("rc2016_nombre",$scope.user.name);
       localStorage.setItem("rc2016_email",$scope.user.email);
