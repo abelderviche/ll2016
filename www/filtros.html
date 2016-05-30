@@ -62,16 +62,15 @@
 </div>
 
     <div class="row">
-    	<div class="col s6" ng-repeat="cat in catalogo | orderBy:predicate:reverse  | filter:query | filter:colourFilter">
+    	<div class="col s6" ng-repeat="cat in catalogo | orderBy:predicate:reverse  | filter:query | filter:colourFilter" style="height:240px;">
     		<a href="#/detalle/{{cat.id}}">
 	          <div class="card">
 	            <div class="card-image">
 	              <img src="{{cat.imagen_toro}}">
 	            </div>
-	            <div class="card-content grey-text text-lighten-1">
+	            <div class="card-content grey-text text-lighten-1" style=" padding-top: 0px;">
 	              <h5>{{cat.nombre_toro}}</h5>
-	              Dosis: $ {{cat.precio }}
-	              Apt. Vaq: {{cat.aptosvaquillonas}}
+	             <span> Dosis: $ {{cat.precio }}</span>
 	            </div>
 	           </div>
    			</a>

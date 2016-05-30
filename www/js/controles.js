@@ -10,14 +10,67 @@ aplicacion.filter('getById', function() {
   }
 });
 
-aplicacion.controller('carritoCtrl',['$scope','$location','$http', function($scope, $location,$http){
-      console.log("aca");
+aplicacion.factory('registroCantidadVentas',function(){
+  var items = [];
+  var itemsService = {};
+
+  if (localStorage.getItem("laslilas_nro_ventas") === null) {
+          localStorage.setItem("laslilas_nro_ventas",0);
+  }
+
+  itemsService.add = function() {
+    var nro_vta = localStorage.getItem("laslilas_nro_ventas");
+    var nueva_vta = (Number(nro_vta) + Number(1));
+    localStorage.setItem("laslilas_nro_ventas", nueva_vta);
+    items[0] = nueva_vta;
+  };
+  itemsService.list = function() {
+    items[0] = localStorage.getItem("laslilas_nro_ventas");
+      return items;
+  };
+
+  return itemsService;
+});
+
+aplicacion.factory('registroVentas',function(){
+  var items = JSON.parse(localStorage.getItem("laslilas_listado_ventas"));
+  var itemsService = {};
+  var venta = {};
+    
+  itemsService.add = function(detalle) {
+    ventaid = "ventaid_" + localStorage.getItem("laslilas_nro_ventas");
+    venta[ventaid] = detalle;
+    items.push(venta);
+    localStorage.setItem("laslilas_listado_ventas",JSON.stringify(items));
+    //console.log(JSON.parse(localStorage.getItem("laslilas_listado_ventas")));
+  };
+  
+  itemsService.list = function() {
+    return items;
+  };
+    
+  return itemsService;
+});
+
+aplicacion.controller('carritoCtrl',['$scope','$location','$http','registroVentas', function($scope,$location,$http,registroVentas){
+      $scope.listado_ventas = registroVentas.list();
+      var returnArr = [];
+      angular.forEach($scope.listado_ventas, function(value,key) {
+        angular.forEach(value, function(value2,key2) {
+          returnArr.push(value2);
+        });
+      });
+      $scope.listado_ventas = returnArr;
   }]);
 
+aplicacion.controller('navegacionCtrl',['$scope','registroCantidadVentas', function($scope,registroCantidadVentas){
+       $scope.ventasActuales = registroCantidadVentas.list();
+}]);
+
 aplicacion.controller('catalogoCtrl',['$scope','$location','$http', function($scope, $location,$http){
-     // localStorage.setItem("rc2016_firstime","0");
-      //localStorage.setItem("rc2016_nombre","");
-      //localStorage.setItem("rc2016_email","");
+    //localStorage.setItem("rc2016_firstime","0");
+     //localStorage.setItem("rc2016_nombre","");
+     //localStorage.setItem("rc2016_email","");
     if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
       $scope.loginview = true;
     } else {  
@@ -43,24 +96,25 @@ aplicacion.controller('subcatalogoCtrl',['$scope', '$routeParams', '$http','$sce
     function($scope, $routeParams, $http,$sce,$rootScope) {
       $scope.id_raza = $routeParams.id_raza;
       $scope.nombre_raza = $routeParams.nombre_raza;
-      console.log( $scope.id_raza)
       $http.get('laslilas.json').success(function(data){
         $scope.catalogo = data;
       });
   }]);
 
-aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope','$filter',
-    function($scope, $routeParams, $http,$sce,$rootScope,$filter) {
+aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope','$filter','registroVentas','registroCantidadVentas',function($scope, $routeParams, $http,$sce,$rootScope,$filter,registroVentas,registroCantidadVentas) {
       $scope.id_toro = $routeParams.id_detalle;
+
       $http.get('laslilas.json').success(function(data){
         var found = $filter('getById')(data, $scope.id_toro);
-         console.log(found);
-         //$scope.selected = JSON.stringify(found);
-
-
         $scope.detalle = found;
       });
-  }]);
+
+      $scope.agregarVenta = function (){
+        registroCantidadVentas.add();
+        registroVentas.add($scope.detalle);
+      };
+
+}]);
 
 aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope','$filter',
     function($scope, $routeParams, $http,$sce,$rootScope,$filter) {

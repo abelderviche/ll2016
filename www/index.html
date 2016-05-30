@@ -84,11 +84,11 @@
         
   </style>
     <body>
- <div class="navbar-fixed">
+ <div class="navbar-fixed" ng-controller="navegacionCtrl">
        <nav>
         <div class="nav-wrapper white ">
           <a href="#/" class="brand-logo color_lilas_texto">CABA&Ntilde;A LAS LILAS</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse color_lilas_texto right"><i class="material-icons">menu</i></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse color_lilas_texto right datos_form"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down"> </ul> 
           <ul class="side-nav" id="mobile-demo" style="margin-top:56px;">
             <li class="color_lilas_texto datos_form" id="form_name">Patricio Arango</li>
@@ -115,7 +115,7 @@
               </ul>
             </li>
             <div class="divider"></div>
-            <li><a href="#/carrito">Carrito <span class="badge teal-text" id="cant_ventas"style="font-size: 110%">4</span></a></li>
+            <li ng-repeat="venta in ventasActuales | limitTo:1"><a href="#/carrito">Carrito <span class="badge teal-text" id="cant_ventas"style="font-size: 110%">{{venta}}</span></a></li>
           </ul>
         </div>
       </nav>
@@ -157,11 +157,11 @@
       }
 
       //carrito
-      if (localStorage.getItem("laslilas_nro_ventas") === null) {
-        localStorage.setItem("laslilas_nro_ventas","0");
+      /*if (localStorage.getItem("laslilas_nro_ventas") === null) {
+        localStorage.setItem("laslilas_nro_ventas",0);
       }
 
-      $("#cant_ventas").text(localStorage.getItem("laslilas_nro_ventas"));
+      $("#cant_ventas").text(localStorage.getItem("laslilas_nro_ventas"));*/
   });
 
 </script>
