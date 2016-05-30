@@ -10,6 +10,9 @@ aplicacion.filter('getById', function() {
   }
 });
 
+aplicacion.controller('carritoCtrl',['$scope','$location','$http', function($scope, $location,$http){
+      console.log("aca");
+  }]);
 
 aplicacion.controller('catalogoCtrl',['$scope','$location','$http', function($scope, $location,$http){
      // localStorage.setItem("rc2016_firstime","0");
@@ -40,6 +43,7 @@ aplicacion.controller('subcatalogoCtrl',['$scope', '$routeParams', '$http','$sce
     function($scope, $routeParams, $http,$sce,$rootScope) {
       $scope.id_raza = $routeParams.id_raza;
       $scope.nombre_raza = $routeParams.nombre_raza;
+      console.log( $scope.id_raza)
       $http.get('laslilas.json').success(function(data){
         $scope.catalogo = data;
       });
@@ -93,5 +97,6 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
     }
 
   }]);
+
 
 

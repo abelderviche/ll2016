@@ -26,7 +26,7 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
               <i class="material-icons">share</i>
             </div>-->
             <div class="col s6">
-              <a href="mailto:laslilas@gmail.com?subject=Nueva Compra&body=whatever body body" target="_blank"><i class="material-icons">shopping_cart</i></a>
+              <a href="mailto:laslilas@gmail.com?subject=Nueva Compra&body={{detalle.nombre_toro}}%0DOSIS ${{detalle.precio}}%0sigue aca" target="_blank"><i class="material-icons pink-text text-darken-3">shopping_cart</i></a>
             </div>
           </div>
         </section>
@@ -57,14 +57,14 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
             
           </div>
         </section>
-     	<img style="width:100%" src="{{detalle.imagen_toro2}}">
-       <!-- 
+     
+       
           <div class="row">
-            <div class="col s12">
+            <div class="col s12" style="    padding: 0px;">
               <img class="responsive-img" src="{{detalle.imagen_toro2}}">
             </div>
           </div>
-      -->
+      
         <section class="compartir">
           <div class="row center color_lilas_texto">
             <div class="col s4">

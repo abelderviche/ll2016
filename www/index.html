@@ -54,6 +54,34 @@
     flex: 1 0 auto;
   }
       
+       /* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+        
   </style>
     <body>
  <div class="navbar-fixed">
@@ -61,17 +89,11 @@
         <div class="nav-wrapper white ">
           <a href="#/" class="brand-logo color_lilas_texto">CABA&Ntilde;A LAS LILAS</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse color_lilas_texto right"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <!--<li class="datos_form">Patricio Arango</li>
-            <li class="datos_form">patricioarango@telam.com.ar</li>
-            <div class="divider"></div>
-            <li><a href="#/filtros#buscar">Buscar</a></li>
-            <li><a href="#/filtros">Filtros</a></li>
-            <li><a href="#/">Catalogo</a></li>-->
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
+          <ul class="right hide-on-med-and-down"> </ul> 
+          <ul class="side-nav" id="mobile-demo" style="margin-top:56px;">
             <li class="color_lilas_texto datos_form" id="form_name">Patricio Arango</li>
             <li class="color_lilas_texto datos_form" id="form_email">patricioarango@telam.com.ar</li>
+            <div class="divider"></div>
             <li><a href="#/">Catalogo<i style="float: left; margin-top: 18px;margin-right: 15px;" class="material-icons">filter_list</i></a></li>
             <li><a href="#/filtros">Filtros<i class="material-icons"  style="float: left; margin-top: 18px;margin-right: 15px;">filter_list</i></a></li>
             <li class="no-padding">
@@ -92,6 +114,8 @@
                 </li>
               </ul>
             </li>
+            <div class="divider"></div>
+            <li><a href="#/carrito">Carrito <span class="badge teal-text" id="cant_ventas"style="font-size: 110%">4</span></a></li>
           </ul>
         </div>
       </nav>
@@ -123,13 +147,21 @@
              closeOnClick: true // Choose the horizontal origin
     });
 
-       if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
+      // datos formulario
+      if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
           $(".datos_form").hide();
-        } else {  
+      } else {  
           $(".datos_form").show();
           $("#form_name").text(localStorage.getItem("rc2016_nombre"));
           $("#form_email").text(localStorage.getItem("rc2016_email"));
-        }
+      }
+
+      //carrito
+      if (localStorage.getItem("laslilas_nro_ventas") === null) {
+        localStorage.setItem("laslilas_nro_ventas","0");
+      }
+
+      $("#cant_ventas").text(localStorage.getItem("laslilas_nro_ventas"));
   });
 
 </script>

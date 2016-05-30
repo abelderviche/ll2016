@@ -10,7 +10,7 @@
 			</a>
 		</div>
 	</div>-->
-	<div class="row" ng-show="loginview">
+	<div class="row" ng-show="loginview" style="padding-top:15%">
 	    <form name="userForm" ng-submit="submitForm()">
 	      
 	        <div class="input-field col s12">
@@ -20,9 +20,10 @@
 	        </div>
 	      
 	    <div class="input-field col s12">
-	      <input value="" id="first_name2" type="text" class="validate" ng-model="user.name">
-	      <label class="active" for="first_name2">Nombre y Apellido</label>
-	    </div>
+	        <i class="material-icons prefix">account_box</i>
+	          <input id="name" type="text" class="validate" ng-model="user.name">
+	          <label for="name" data-error="wrong" data-success="right">Nombre y Apellido</label>
+	        </div>
 		<div class="center-align">
 			 <button class="btn waves-effect waves-light pink darken-3" type="submit" name="action">Enviar
     			<i class="material-icons right">send</i>
@@ -47,8 +48,8 @@
       </div>
   -->
   	<div class="row" ng-hide="loginview">
-        <div class="col s6" ng-repeat="raza in razas " style="padding:0 !important">
-        	<a href="#/subcatalogo/{{raza.nombre_raza}}/nombre_raza/{{raza.nombre}}">
+        <div class="col s6" ng-repeat="raza in razas " style="padding:0 !important;line-height:0 !important;">
+        	<a href="#/subcatalogo/{{raza.nombre_raza}}/nombre_raza/{{raza.nombre}}" style="">
               <img style="width:100%" src="{{raza.imagen}}">
           	</a>
       	</div>
