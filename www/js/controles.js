@@ -15,7 +15,7 @@ aplicacion.factory('registroCantidadVentas',function(){
   var itemsService = {};
 
   if (localStorage.getItem("laslilas_nro_ventas") === null) {
-          localStorage.setItem("laslilas_nro_ventas",0);
+    localStorage.setItem("laslilas_nro_ventas",0);
   }
 
   itemsService.add = function() {
@@ -24,44 +24,93 @@ aplicacion.factory('registroCantidadVentas',function(){
     localStorage.setItem("laslilas_nro_ventas", nueva_vta);
     items[0] = nueva_vta;
   };
+
   itemsService.list = function() {
     items[0] = localStorage.getItem("laslilas_nro_ventas");
       return items;
+  };
+
+  itemsService.delete = function() {
+    var nro_vta = localStorage.getItem("laslilas_nro_ventas");
+    var nueva_vta = (Number(nro_vta) - Number(1));
+    if (nueva_vta < 0){
+      nueva_vta = 0;
+    }
+    localStorage.setItem("laslilas_nro_ventas", nueva_vta);
+    items[0] = nueva_vta;
   };
 
   return itemsService;
 });
 
 aplicacion.factory('registroVentas',function(){
-  var items = JSON.parse(localStorage.getItem("laslilas_listado_ventas"));
+
+  if (localStorage.getItem("laslilas_nro_ventas") >= 1){
+    var items = JSON.parse(localStorage.getItem("laslilas_listado_ventas"));
+  } else {
+    var items = [];
+  }
+    
   var itemsService = {};
-  var venta = {};
     
   itemsService.add = function(detalle) {
-    ventaid = "ventaid_" + localStorage.getItem("laslilas_nro_ventas");
-    venta[ventaid] = detalle;
+    var venta = {};
+    var nro_vta = localStorage.getItem("laslilas_nro_ventas");
+    ventaid = nro_vta;
+    ventaid2 = "ventaid_" + nro_vta;
+    detalle.ventaidparaborrar = nro_vta;
+    venta[ventaid2] = detalle;
     items.push(venta);
     localStorage.setItem("laslilas_listado_ventas",JSON.stringify(items));
-    //console.log(JSON.parse(localStorage.getItem("laslilas_listado_ventas")));
   };
-  
+
+  itemsService.delete = function(key) {
+    delete items[key];
+    localStorage.setItem("laslilas_listado_ventas",JSON.stringify(items));
+  };
+
   itemsService.list = function() {
+    var items = JSON.parse(localStorage.getItem("laslilas_listado_ventas"));
     return items;
   };
     
   return itemsService;
 });
 
-aplicacion.controller('carritoCtrl',['$scope','$location','$http','registroVentas', function($scope,$location,$http,registroVentas){
-      $scope.listado_ventas = registroVentas.list();
-      var returnArr = [];
-      angular.forEach($scope.listado_ventas, function(value,key) {
-        angular.forEach(value, function(value2,key2) {
-          returnArr.push(value2);
-        });
+aplicacion.controller('carritoCtrl',['$scope','$location','$http','registroVentas','registroCantidadVentas', function($scope,$location,$http,registroVentas,registroCantidadVentas){
+
+//localStorage.removeItem("laslilas_nro_ventas");
+//localStorage.removeItem("laslilas_listado_ventas");
+  
+  listar();
+
+  //listamos los pedidos
+  function listar(){
+    $scope.listado_ventas = registroVentas.list();
+
+    var returnArr = [];
+    angular.forEach($scope.listado_ventas, function(value,key) {
+      angular.forEach(value, function(value2,key2) {
+        value2.esteeselkeydelarray = key;
+        returnArr.push(value2);
       });
-      $scope.listado_ventas = returnArr;
-  }]);
+    });
+    $scope.listado_ventas = returnArr;
+
+    $scope.no_ventas = true;
+    if (returnArr.length >= 1){
+      $scope.no_ventas = false;
+    }
+
+  }
+
+  //para eliminar ventas
+  $scope.borrarVenta = function(key){
+    registroCantidadVentas.delete();
+    registroVentas.delete(key);
+    listar();
+  }
+}]);
 
 aplicacion.controller('navegacionCtrl',['$scope','registroCantidadVentas', function($scope,registroCantidadVentas){
        $scope.ventasActuales = registroCantidadVentas.list();
@@ -78,7 +127,6 @@ aplicacion.controller('catalogoCtrl',['$scope','$location','$http', function($sc
     }
 
     $scope.submitForm = function() {
-      console.log($scope.user.name);  
       localStorage.setItem("rc2016_firstime","1");
       localStorage.setItem("rc2016_nombre",$scope.user.name);
       localStorage.setItem("rc2016_email",$scope.user.email);
@@ -108,12 +156,29 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
         var found = $filter('getById')(data, $scope.id_toro);
         $scope.detalle = found;
       });
-
-      $scope.agregarVenta = function (){
+      //boton carrito agrega pedido
+      $scope.botones_venta = true;
+      $scope.agregarVenta = function (count){
         registroCantidadVentas.add();
+        if ($scope.count < 1){
+            $scope.count = 1;
+        }
+        $scope.detalle.cantidad_dosis = $scope.count;
         registroVentas.add($scope.detalle);
+        $scope.botones_venta = false;
       };
-
+      $scope.cant_dosis = function (tipo,count){
+        if (tipo == "add"){
+          $scope.count = count + 1;
+        }
+        if (tipo == "remove"){
+          if (count <= 1){
+            $scope.count = 1;
+          } else {
+            $scope.count = count - 1;
+          }
+        }
+      }
 }]);
 
 aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope','$filter',
@@ -121,7 +186,6 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
       $http.get('laslilas.json').success(function(data){
         $scope.catalogo = data;
          for (var i = 0; i < $scope.catalogo.length; i++) {
-           // console.log($scope.catalogo[i].precio);
             $scope.catalogo[i].precio = parseFloat($scope.catalogo[i].precio);
          };
       });
