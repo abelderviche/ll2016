@@ -1519,8 +1519,8 @@
 	"nombre_raza":"brangus_colorado",
 	"nombre_raza_cat":"Brangus Colorado",
 	"destacado":0,
-	"imagen_toro":"img/capitán-top.jpg",
-	"imagen_toro2":"img/capitán-back.jpg",
+	"imagen_toro":"img/capitan-top.jpg",
+	"imagen_toro2":"img/capitan-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"150",
 
@@ -1922,8 +1922,8 @@
 	"nombre_raza":"braford",
 	"nombre_raza_cat":"Braford",
 	"destacado":0,
-	"imagen_toro":"img/capitán-top.jpg",
-	"imagen_toro2":"img/capitán-back.jpg",
+	"imagen_toro":"img/capitan-top.jpg",
+	"imagen_toro2":"img/capitan-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"128",
     
@@ -1980,8 +1980,8 @@
 	"nombre_raza":"braford",
 	"nombre_raza_cat":"Braford",
 	"destacado":0,
-	"imagen_toro":"img/iberá-top.jpg",
-	"imagen_toro2":"img/iberá-back.jpg",
+	"imagen_toro":"img/ibera-top.jpg",
+	"imagen_toro2":"img/ibera-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"136",
     
@@ -2067,8 +2067,8 @@
 	"nombre_raza":"braford",
 	"nombre_raza_cat":"Braford",
 	"destacado":1,
-	"imagen_toro":"img/soypragmático-top.jpg",
-	"imagen_toro2":"img/soypragmático-back.jpg",
+	"imagen_toro":"img/soypragmatico-top.jpg",
+	"imagen_toro2":"img/soypragmatico-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"115",
     
