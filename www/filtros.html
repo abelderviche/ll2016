@@ -1,36 +1,28 @@
 <style>
 	.seleccionado{
-		font-weight: bold;
+		background: #8b0d2a;
+		border-radius: 50%;
+		color:white;
 	}
 </style>
+{{relevantes}}
 <div class="color_lilas_texto">
-	<div class="container">
-		<div class="row ">
-			<div class="input-field">
-			<a name="buscar"></a>
-				<i class="material-icons prefix">search</i>
-				<input id="icon_prefix" type="text"ng-model="query" class="validate">
-				<label for="icon_prefix"></label>
-			</div>
-		</div>
-	</div>
-
 	<div class="row center">
-		<div class="s6 col">
-			<i class="material-icons large">flag</i>
-			<h6 ng-class="{bold:important}">Mas Relevante</h6>
+		<div class="s6 col" ng-click="activeRelevantes()">
+			<i class="material-icons large"  ng-class="{seleccionado:relevantes}">flag</i>
+			<h6 >Mas Relevante</h6>
 		</div>
 		<div class="s6 col">
 			<i class="material-icons large">poll</i>
 			<h6>Ranking</h6>
 		</div>
 		<div class="s6 col test" ng-click="order('precio',true)">
-			<i class="material-icons large">monetization_on</i>
+			<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_asc'}">attach_money</i>
 			<h6>Mayor Precio</h6>
 		</div>
 	
 		<div class="s6 col" ng-click="order('precio',false)">
-			<i class="material-icons large">attach_money</i>
+			<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_desc'}">attach_money</i>
 			<h6>Menor Precio</h6>
 		</div>
 	</div>
@@ -62,7 +54,7 @@
 </div>
 
     <div class="row">
-    	<div class="col s6" ng-repeat="cat in catalogo | orderBy:predicate:reverse  | filter:query | filter:colourFilter" style="height:240px;">
+    	<div class="col s6" ng-repeat="cat in catalogo | orderBy:predicate:reverse  | filter:colourFilter | filter:filters" style="height:240px;">
     		<a href="#/detalle/{{cat.id}}">
 	          <div class="card">
 	            <div class="card-image">

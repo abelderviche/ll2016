@@ -92,31 +92,32 @@
           <a href="#/" class="color_lilas_texto left "><i class="material-icons">chevron_left</i></a>
           <ul class="right hide-on-med-and-down"> </ul> 
           <ul class="side-nav" id="mobile-demo" style="margin-top:56px;">
-            <li class="color_lilas_texto datos_form" id="form_name">Patricio Arango</li>
-            <li class="color_lilas_texto datos_form" id="form_email">patricioarango@telam.com.ar</li>
-            <div class="divider"></div>
-            <li><a href="#/">Catalogo<i style="float: left; margin-top: 18px;margin-right: 15px;" class="material-icons">filter_list</i></a></li>
-            <li><a href="#/filtros">Filtros<i class="material-icons"  style="float: left; margin-top: 18px;margin-right: 15px;">filter_list</i></a></li>
+            <li style="text-align:right;" class="color_lilas_texto datos_form" id="form_name">Patricio Arango</li>
+            <li style="text-align:right;" class="color_lilas_texto datos_form" id="form_email">patricioarango@telam.com.ar</li>
+                <div class="divider"></div>
+            <li style="text-align:right;"><a href="#/">Catalogo<img src="img/iconos/catalogo.png"></a></li>
+            <li style="text-align:right;"><a href="#/buscador">Buscador <img src="img/iconos/lupa.png"></a></li>
+            <li style="text-align:right;"><a href="#/filtros">Filtros<img src="img/iconos/filtros.png"></a></li>
             <li class="no-padding">
               <ul class="collapsible collapsible-accordion">
                 <li>
-                  <a class="collapsible-header">Razas<i class="material-icons">keyboard_arrow_down</i></a>
-                  <div class="collapsible-body">
-                    <ul>
-                      <li><a href="#/subcatalogo/angus_negro/nombre_raza/Angus Negro">Angus Negro</a></li>
-                      <li><a href="#/subcatalogo/angus_colorado/nombre_raza/Angus Colorado">Angus Colorado</a></li>
-                      <li><a href="#/subcatalogo/polled_hereford/nombre_raza/Polled Hereford">Polled Hereford</a></li>
-                      <li><a href="#/subcatalogo/brangus_negro/nombre_raza/Brangus Negro">Brangus Negro</a></li>
-                      <li><a href="#/subcatalogo/brangus_colorado/nombre_raza/Brangus Colorado">Brangus Colorado</a></li>
-                      <li><a href="#/subcatalogo/braford/nombre_raza/Braford">Braford</a></li>
-                      <li><a href="#/subcatalogo/brahman/nombre_raza/Brahman">Brahman</a></li>
+                  <a style="text-align:right;" class="collapsible-header">Razas<i class="material-icons">keyboard_arrow_down</i></a>
+                  <div class="collapsible-body" style="text-align:right;" >
+                    <ul >
+                      <li><a href="#/subcatalogo/angus_negro/nombre_raza/Angus Negro">Angus Negro<img src="img/iconos/toros.png"></a></li>
+                      <li><a href="#/subcatalogo/angus_colorado/nombre_raza/Angus Colorado">Angus Colorado<img src="img/iconos/toros.png"></a></li>
+                      <li><a href="#/subcatalogo/polled_hereford/nombre_raza/Polled Hereford">Polled Hereford<img src="img/iconos/toros.png"></a></li>
+                      <li><a href="#/subcatalogo/brangus_negro/nombre_raza/Brangus Negro">Brangus Negro<img src="img/iconos/toros.png"></a></li>
+                      <li><a href="#/subcatalogo/brangus_colorado/nombre_raza/Brangus Colorado">Brangus Colorado<img src="img/iconos/toros.png"></a></li>
+                      <li><a href="#/subcatalogo/braford/nombre_raza/Braford">Braford<img src="img/iconos/toros.png"></a></li>
+                      <li><a href="#/subcatalogo/brahman/nombre_raza/Brahman">Brahman<img src="img/iconos/toros.png"></a></li>
                     </ul>
                   </div>
                 </li>
               </ul>
             </li>
             <div class="divider"></div>
-            <li ng-repeat="venta in ventasActuales | limitTo:1"><a href="#/carrito">Carrito <span class="badge teal-text" id="cant_ventas"style="font-size: 110%">{{venta}}</span></a></li>
+            <li ng-repeat="venta in ventasActuales | limitTo:1"><a href="#/carrito"><img src="img/iconos/carrito.png">Carrito <span class="badge teal-text" id="cant_ventas"style="font-size: 110%">{{venta}}</span></a></li>
           </ul>
         </div>
       </nav>

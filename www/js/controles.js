@@ -189,9 +189,22 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
             $scope.catalogo[i].precio = parseFloat($scope.catalogo[i].precio);
          };
       });
+      $scope.relevantes = false;
+      $scope.filters = { };
+      $scope.activeRelevantes = function(){
+        $scope.relevantes = !$scope.relevantes;
+        if ($scope.relevantes) { $scope.filters.destacado = 1;}else{$scope.filters.destacado = ''; }
+      }
+     
      $scope.order = function(predicate,reverse) {
-    $scope.reverse = reverse;
-    $scope.predicate = predicate;
+      $scope.reverse = reverse;
+      $scope.predicate = predicate;
+      if(reverse){
+        $scope.seleccionado = 'prec_asc';
+      }else{
+        $scope.seleccionado = 'prec_desc';
+
+      }
   };
 
 

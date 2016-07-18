@@ -19,6 +19,10 @@
               templateUrl : 'filtros.html',
               controller  : 'filtrosCtrl'
           })
+          .when('/buscador', {
+              templateUrl : 'buscador.html',
+              controller  : 'filtrosCtrl'
+          })
           .when('/carrito', {
               templateUrl : 'carrito.html',
               controller  : 'carritoCtrl'
