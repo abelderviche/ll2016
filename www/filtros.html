@@ -4,25 +4,32 @@
 		border-radius: 50%;
 		color:white;
 	}
+	.iconin{
+		height: 75px;
+		width: 75px;
+	}
 </style>
-{{relevantes}}
-<div class="color_lilas_texto">
+<div class="color_lilas_texto" style="margin-top:30px">
 	<div class="row center">
 		<div class="s6 col" ng-click="activeRelevantes()">
-			<i class="material-icons large"  ng-class="{seleccionado:relevantes}">flag</i>
+			<!-- <i class="material-icons large"  ng-class="{seleccionado:relevantes}">flag</i> -->
+			<img  class="iconin" ng-src="img/iconos/{{relevante_src}}.png">
 			<h6 >Mas Relevante</h6>
 		</div>
 		<div class="s6 col">
-			<i class="material-icons large">poll</i>
+			<!--<i class="material-icons large">poll</i>-->
+			<img class="iconin" src="img/iconos/ranking1.png">
 			<h6>Ranking</h6>
 		</div>
 		<div class="s6 col test" ng-click="order('precio',true)">
-			<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_asc'}">attach_money</i>
+			<!--<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_asc'}">attach_money</i> -->
+			<img class="iconin"  ng-src="img/iconos/{{src_preasc}}.png">
 			<h6>Mayor Precio</h6>
 		</div>
 	
 		<div class="s6 col" ng-click="order('precio',false)">
-			<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_desc'}">attach_money</i>
+			<!--<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_desc'}">attach_money</i>-->
+			<img class="iconin" ng-src="img/iconos/{{src_predesc}}.png">
 			<h6>Menor Precio</h6>
 		</div>
 	</div>

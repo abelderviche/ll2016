@@ -81,7 +81,12 @@
    .input-field .prefix.active {
      color: #000;
    }
-        
+     .nav-wrapper li > a > span{
+        margin: 7px;
+     }  
+     .nav-wrapper li > a > img{
+        margin: -8px;
+     }   
   </style>
     <body>
  <div class="navbar-fixed" ng-controller="navegacionCtrl">
@@ -89,16 +94,16 @@
         <div class="nav-wrapper white ">
           <a href="#/" class="brand-logo color_lilas_texto">CABA&Ntilde;A LAS LILAS</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse color_lilas_texto right datos_form"><i class="material-icons">menu</i></a>
-          <a href="#/" class="color_lilas_texto left "><i class="material-icons">chevron_left</i></a>
+          <a href="#/" class="color_lilas_texto left "><i class="material-icons" style="font-size:4rem!important">chevron_left</i></a>
           <ul class="right hide-on-med-and-down"> </ul> 
           <ul class="side-nav" id="mobile-demo" style="margin-top:56px;">
             <li style="text-align:right;" class="color_lilas_texto datos_form" id="form_name">Patricio Arango</li>
             <li style="text-align:right;" class="color_lilas_texto datos_form" id="form_email">patricioarango@telam.com.ar</li>
                 <div class="divider"></div>
-            <li style="text-align:right;"><a href="#/">Catalogo<img src="img/iconos/catalogo.png"></a></li>
-            <li style="text-align:right;"><a href="#/buscador">Buscador <img src="img/iconos/lupa.png"></a></li>
-            <li style="text-align:right;"><a href="#/filtros">Filtros<img src="img/iconos/filtros.png"></a></li>
-            <li class="no-padding">
+            <li style="text-align:right;"><a href="#/"><span>Catalogo</span><img src="img/iconos/toros.png"></a></li>
+            <li style="text-align:right;"><a href="#/buscador"><span>Buscador</span><img src="img/iconos/lupa.png"></a></li>
+            <li style="text-align:right;"><a href="#/filtros"><span>Filtros</span><img src="img/iconos/filtros.png"></a></li>
+            <!--<li class="no-padding">
               <ul class="collapsible collapsible-accordion">
                 <li>
                   <a style="text-align:right;" class="collapsible-header">Razas<i class="material-icons">keyboard_arrow_down</i></a>
@@ -114,7 +119,7 @@
                     </ul>
                   </div>
                 </li>
-              </ul>
+              </ul>-->
             </li>
             <div class="divider"></div>
             <li ng-repeat="venta in ventasActuales | limitTo:1"><a href="#/carrito"><img src="img/iconos/carrito.png">Carrito <span class="badge teal-text" id="cant_ventas"style="font-size: 110%">{{venta}}</span></a></li>

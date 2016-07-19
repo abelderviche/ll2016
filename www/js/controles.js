@@ -191,9 +191,12 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
       });
       $scope.relevantes = false;
       $scope.filters = { };
+      $scope.relevante_src = "destacado1"
+      $scope.src_predesc = "menosprecio1"
+        $scope.src_preasc = "masprecio1"
       $scope.activeRelevantes = function(){
         $scope.relevantes = !$scope.relevantes;
-        if ($scope.relevantes) { $scope.filters.destacado = 1;}else{$scope.filters.destacado = ''; }
+        if ($scope.relevantes) { $scope.filters.destacado = 1; $scope.relevante_src = "destacado2"}else{$scope.filters.destacado = '';$scope.relevante_src = "destacado1" }
       }
      
      $scope.order = function(predicate,reverse) {
@@ -201,10 +204,15 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
       $scope.predicate = predicate;
       if(reverse){
         $scope.seleccionado = 'prec_asc';
+        $scope.src_preasc = "masprecio2"
+        $scope.src_predesc = "menosprecio1"
       }else{
         $scope.seleccionado = 'prec_desc';
+        $scope.src_predesc = "menosprecio2"
+        $scope.src_preasc = "masprecio1"
 
       }
+        
   };
 
 
