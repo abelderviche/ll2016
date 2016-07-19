@@ -82,11 +82,14 @@
      color: #000;
    }
      .nav-wrapper li > a > span{
-        margin: 7px;
+        margin: 15px;
      }  
      .nav-wrapper li > a > img{
         margin: -8px;
      }   
+     .nav-wrapper li > a{
+      font-size: 18px;
+     }
   </style>
     <body>
  <div class="navbar-fixed" ng-controller="navegacionCtrl">
@@ -98,11 +101,12 @@
           <ul class="right hide-on-med-and-down"> </ul> 
           <ul class="side-nav" id="mobile-demo" style="margin-top:56px;">
             <li style="text-align:right;" class="color_lilas_texto datos_form" id="form_name">Patricio Arango</li>
-            <li style="text-align:right;" class="color_lilas_texto datos_form" id="form_email">patricioarango@telam.com.ar</li>
-                <div class="divider"></div>
-            <li style="text-align:right;"><a href="#/"><span>Catalogo</span><img src="img/iconos/toros.png"></a></li>
-            <li style="text-align:right;"><a href="#/buscador"><span>Buscador</span><img src="img/iconos/lupa.png"></a></li>
-            <li style="text-align:right;"><a href="#/filtros"><span>Filtros</span><img src="img/iconos/filtros.png"></a></li>
+           <div class="divider"></div>
+            <li style="text-align:right;"><a href="#/buscador"><span>BUSCAR</span><img src="img/iconos/lupa.png"></a></li>
+            <div class="divider"></div>
+            <li style="text-align:right;"><a href="#/filtros"><span>FILTROS</span><img src="img/iconos/filtros.png"></a></li>
+              <div class="divider"></div>
+            <li style="text-align:right;"><a href="#/"><span>CAT&Aacute;LOGO</span><img src="img/iconos/toros.png"></a></li>
             <!--<li class="no-padding">
               <ul class="collapsible collapsible-accordion">
                 <li>
@@ -122,7 +126,7 @@
               </ul>-->
             </li>
             <div class="divider"></div>
-            <li ng-repeat="venta in ventasActuales | limitTo:1"><a href="#/carrito"><img src="img/iconos/carrito.png">Carrito <span class="badge teal-text" id="cant_ventas"style="font-size: 110%">{{venta}}</span></a></li>
+            <li style="text-align:right;" ng-repeat="venta in ventasActuales | limitTo:1"><a href="#/carrito"><span class=" teal-text" id="cant_ventas"style="font-size: 110%">{{venta}}</span>CARRITO <img src="img/iconos/carrito.png"></a></li>
           </ul>
         </div>
       </nav>
