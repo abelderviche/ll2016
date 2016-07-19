@@ -11,6 +11,10 @@
               templateUrl : 'subcatalogo.html',
               controller  : 'subcatalogoCtrl'
           })
+        .when('/destacados', {
+              templateUrl : 'subcatalogo.html',
+              controller  : 'destacadosCtrl'
+          })
           .when('/detalle/:id_detalle', {
               templateUrl : 'detalle.html',
               controller  : 'detalleCtrl'

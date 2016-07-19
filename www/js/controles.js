@@ -148,7 +148,15 @@ aplicacion.controller('subcatalogoCtrl',['$scope', '$routeParams', '$http','$sce
         $scope.catalogo = data;
       });
   }]);
-
+aplicacion.controller('destacadosCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope',
+    function($scope, $routeParams, $http,$sce,$rootScope) {
+      $scope.filters = { };
+      $scope.nombre_raza  = 'Destacados';
+      $scope.filters.destacado = 1
+      $http.get('laslilas.json').success(function(data){
+        $scope.catalogo = data;
+      });
+  }]);
 aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope','$filter','registroVentas','registroCantidadVentas',function($scope, $routeParams, $http,$sce,$rootScope,$filter,registroVentas,registroCantidadVentas) {
       $scope.id_toro = $routeParams.id_detalle;
 
