@@ -30,6 +30,10 @@
           .when('/carrito', {
               templateUrl : 'carrito.html',
               controller  : 'carritoCtrl'
+          })
+          .when('/favoritos', {
+              templateUrl : 'favoritos.html',
+              controller  : 'favoritosCtrl'
           });         
   });
 
