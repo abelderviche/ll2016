@@ -226,7 +226,7 @@ aplicacion.controller('destacadosCtrl',['$scope', '$routeParams', '$http','$sce'
         $scope.catalogo = data;
       });
   }]);
-aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope','$filter','registroVentas','registroCantidadVentas',function($scope, $routeParams, $http,$sce,$rootScope,$filter,registroVentas,registroCantidadVentas) {
+aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope','$filter','registroVentas','registroFavoritos','registroCantidadVentas','registroCantidadFavoritos',function($scope, $routeParams, $http,$sce,$rootScope,$filter,registroVentas,registroFavoritos,registroCantidadVentas,registroCantidadFavoritos) {
       $scope.id_toro = $routeParams.id_detalle;
 
       $http.get('laslilas.json').success(function(data){
@@ -268,7 +268,7 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
       $scope.botones_favoritos = true;      
       $scope.agregarFavoritos = function (count){
         registroCantidadFavoritos.add();
-        $scope.detalle.cantidad_dosis = $scope.count;
+        $scope.detalle.cantidad_favoritos = $scope.count;
         registroFavoritos.add($scope.detalle);
         $scope.botones_favoritos = false;
       };

@@ -93,11 +93,11 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
       
         <section class="compartir">
           <div class="row center color_lilas_texto">
-            <div class="col s6" ng-click="agregarFavoritos(1)" ng-show="botones_favoritos">
-              <a href="#" class="btn-floating btn-large waves-effect waves-light pink darken-3" ng-show="botones_favoritos"><i class="material-icons">star</i></a>              
+            <div class="col s6" ng-click="agregarFavoritos(1)">
+              <a href="#" class="btn-floating btn-large waves-effect waves-light pink darken-3"><i class="material-icons">star</i></a>              
             </div>
-            <div class="col s6 blue-text" ng-hide="botones_favoritos">
-              <a href="#" class="btn-floating btn-large waves-effect waves-light pink darken-3" ng-show="botones_favoritos"><i class="material-icons">star</i></a>            
+            <div class="col s6" ng-hide="botones_favoritos">
+              <a href="#" class="btn-floating btn-large waves-effect waves-light blue darken-3" ng-show="botones_favoritos"><i class="material-icons">star</i></a>            
             </div>
 
             <div class="col s6" ng-click="agregarVentaAbajo(1)">
@@ -107,6 +107,6 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
           </div>
         </section>
          </div>
-         <div ng-hide="botones_venta_abajo" class="row center-align"><br>
+         <div ng-hide="botones_venta_abajo" class="row center-align" style="margin-bottom: 20px;"><br>
   <a href="#/carrito" class="waves-effect waves-light btn"><i class="material-icons right">send</i>Ver Pedidos</a>
 </div>
