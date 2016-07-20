@@ -93,8 +93,8 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
       
         <section class="compartir">
           <div class="row center color_lilas_texto">
-            <div class="col s6">
-              <a ng-click="agregarFavoritos(1)" ng-show="botones_favoritos" class="btn-floating btn-large waves-effect waves-light pink darken-3"><i class="material-icons">star</i></a> 
+            <div class="col s6" ng-click="agregarFavoritos(1)">
+              <a ng-show="botones_favoritos" class="btn-floating btn-large waves-effect waves-light pink darken-3"><i class="material-icons">star</i></a> 
               <a ng-hide="botones_favoritos" class="btn-floating btn-large waves-effect waves-light blue darken-3"><i class="material-icons">star</i></a>             
             </div>
 
