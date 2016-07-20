@@ -284,10 +284,26 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
          };
       });
       $scope.relevantes = false;
+      $scope.ranking = false;
       $scope.filters = { };
-      $scope.relevante_src = "destacado1"
-      $scope.src_predesc = "menosprecio1"
-        $scope.src_preasc = "masprecio1"
+      $scope.relevante_src = "destacado1";
+      $scope.src_predesc = "menosprecio1";
+      $scope.src_preasc = "masprecio1";
+      $scope.src_ranking = "ranking1";
+
+
+      $scope.activeRanking = function(){
+        $scope.ranking = !$scope.ranking;
+        if ($scope.ranking) { 
+          $scope.filters.ranking = 1; 
+          $scope.src_ranking = "ranking2"
+        }else{
+          $scope.filters.ranking = '';
+          $scope.src_ranking = "ranking1" 
+        }
+      }
+     
+
       $scope.activeRelevantes = function(){
         $scope.relevantes = !$scope.relevantes;
         if ($scope.relevantes) { $scope.filters.destacado = 1; $scope.relevante_src = "destacado2"}else{$scope.filters.destacado = '';$scope.relevante_src = "destacado1" }

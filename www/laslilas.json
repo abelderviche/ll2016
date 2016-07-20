@@ -23,6 +23,7 @@
 	"descripcion1":"Gran calidad racial, tamaño moderado, buena profundidad de costillas y circunferencia escrotal adulta de 43 cm.",
 	"descripcion2":"Bajo peso al nacer, buena velocidad de crecimiento y sobresalientes DEPs para área de ojo de bife y grasa de terminación, indicando un buen balance en composición corporal.",
 	"descripcion3":"Recomendado para moderar tamaño, mejorar facilidad de engorde e inyectar calidad Angus en rodeos desviados de tipo y tamaño."
+	,"ranking":0
 },{
 	"id": 2,
 	"nombre_toro":"Arafat ",
@@ -47,6 +48,7 @@
 	"descripcion2":"Probada facilidad de parto, acompañada de muy buenas DEPs para carcasa y aptitud materna.",
 	"descripcion3":" Un verdadero toro padre que transmite gran precocidad sexual, musculatura y gran adaptación a los ambientes más restrictivos."
 
+	,"ranking":0
 },{
 	"id": 3,
 	"nombre_toro":"Río jordán",
@@ -70,6 +72,7 @@
 	"descripcion1":"Toro de gran largo, correctos aplomos y cabeza bien característica de la raza. En su pedigree combina a grandes padres, como Arafat, Zorzal, y nieto de la LL 670, una de lasvacas más longevas y de gran producción del plantel de Las Lilas.",
 	"descripcion2":"Tiene bajo PN y alta AM, destacándose su sobresaliente marmoreo, cualidad muy buscada por los mercados más exigentes.",
 	"descripcion3":"Es utilizado para lograr vientres de gran fertilidad, calidad racial y longevos."
+	,"ranking":0
 },{
 	"id": 4,
 	"nombre_toro":"Etiqueta verde",
@@ -96,7 +99,8 @@
 	"descripcion2":"Misma combinación genética que el destacado Etiqueta Negra.En sus DEPs encontramos que es líder en peso al destete, peso final, circunferencia escrotal y área de ojo de bife.",
 	"descripcion3":"Ganador de prueba 2014. Utilizado intensamente en nuestros planteles PC en busca de lograr animales de gran calidad racial y precocidad sexual."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 5,
@@ -124,7 +128,8 @@
 	"descripcion2":"Buena aptitud materna, con moderado peso al nacer, muy buena circunferencia escrotal y espesor de grasa dorsal.",
 	"descripcion3":"Muy útil para imprimir calidad,uniformar tipo y nivelar tamaño en hembras débiles y duras de engrasamiento."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 6,
@@ -152,7 +157,8 @@
 	"descripcion2":"Tiene muy buena curva de crecimiento y sobresaliente CE, lo cual confirma su gran precocidad sexual.",
 	"descripcion3":" El toro más utilizado en nuestros planteles PC, en busca de imprimir sus muy buenos valores de crecimiento en un frame bien moderado."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 7,
@@ -180,7 +186,8 @@
 	"descripcion2":"Portador de facilidad de parto, con sobresalientes DEPs para marmoreo.",
 	"descripcion3":"Recomendado para rodeos excedidos en tamaño, mejorando calidad racial dentro del clásico biotipo Angus."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 8,
@@ -208,7 +215,8 @@
 	"descripcion2":"Bajo peso al nacer, con sobresaliente curva de crecimiento.",
 	"descripcion3":"Pedigree abierto y de probado desempeño en nuestro sistema de producción extensivo, imprimiendo a su progenie buenos mantos musculares y facilidad de  mantenimiento a campo."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 9,
@@ -236,7 +244,8 @@
 	"descripcion2":"Buen perfil de crecimiento para peso al destete y final, acompañado de excelente habilidad materna.",
 	"descripcion3":"Su gran calidad racial y su destacado fenotipo carnicero, lo hacen recomendable para el mejoramiento de una amplia gama de planteles y rodeos Angus."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 10,
@@ -264,7 +273,8 @@
 	"descripcion2":"Destacada curva de crecimiento y sobresalientes datos para carcaza, lo que confirma sus cualidades carniceras.",
 	"descripcion3":"Ganador de prueba 2013, año que dio servicio natural a sus contemporáneas y en 2015 utilizado en los planteles de Las Lilas. Su descendencia lo confirma como un toro que imprime sus bondades. "
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 11,
@@ -292,7 +302,8 @@
 	"descripcion2":"Bajo peso al nacer combinado con un buen crecimiento y circunferencia escrotal y marmoreo.",
 	"descripcion3":"Muy útil como impresor de precocidad, buenas cabezas y blandura de engorde en rodeos faltos de uniformidad."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 12,
@@ -320,7 +331,8 @@
 	"descripcion2":"Buenos DEPs para peso al destete y final, junto a un marcado liderazgo en área de ojo de bife con buena circunferencia escrotal.",
 	"descripcion3":"Muy útil para reforzar precocidad, blandura de engorde, calidad racial y expresión carnicera."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 13,
@@ -348,7 +360,8 @@
 	"descripcion2":"Certera combinación genética de Boyd on Target en madre Max, acompañada de buenas DEPs para crecimiento, área de ojo de bife, dorsal de engrasamiento y marmoreo.",
 	"descripcion3":"Recomendado para reforzar productividad en la recría, aportando una gran calidad racial y volumen corporal en un tamaño intermedio."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 14,
@@ -376,7 +389,8 @@
 	"descripcion2":"Balanceada curva de crecimiento encontrándose en el 15% superior para peso al destete, peso final y circunferencia escrotal.", 
 	"descripcion3":"Padre de mucha calidad racial con típica cabeza Angus, portador de un tamaño intermedio, con muy buena conformación carnicera, impecable desplazamiento y sobresaliente estructura ósea."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 15,
@@ -387,7 +401,7 @@
 	"imagen_toro":"img/bank-note-top.jpg",
 	"imagen_toro2":"img/bank-note-back.jpg",
 	"aptosvaquillonas":"",
-	"precio":"",
+	"precio":0,
 
 	"fn":"28/01/2014 ",
 	"semen": "imporatdo",
@@ -404,7 +418,8 @@
 	"descripcion2":"De excepcionales DEP, es líder en PD, CM, CE, AOB y marmoreo. ",
 	"descripcion3":"Un toro para mejorar musculatura y lograr buenos pesos al destete, con todo el respaldo de la familia Rose."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 16,
@@ -432,7 +447,8 @@
 	"descripcion2":"Sobresaliente perfil de DEPs con 7 escarapelas, destacándose su área de ojo de bife, circunferencia escrotal y habilidad materna.",
 	"descripcion3":"Prolífica y excepcional producción en cientos de rodeos nacionales con manejos extensivos y pastoriles."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 17,
@@ -460,7 +476,8 @@
 	"descripcion2":"Probada facilidad de parto, destacándose la fertilidad y precocidad de sus hijas.",
 	"descripcion3":"De gran utilidad y especialmenterecomendado para moderar tamaño e uniformar rodeos, inyectando precocidad, firmeza de color y calidad Angus."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 18,
@@ -488,7 +505,8 @@
 	"descripcion2":"Sus DEP combinan un moderado PN con muy buen PD, AM y AOB, con un extraordinario PF en un frame 4,3.",
 	"descripcion3":"Sus primeras crías nos indican que será un gran padre de la raza."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 19,
@@ -516,7 +534,8 @@
 	"descripcion2":"Balanceada curva de crecimiento con buena aptitud materna y grasa intramuscular.",
 	"descripcion3":"Recomendado para fijar calidad racial y elevar productividad, reforzando musculatura, estructura y largo corporal."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 20,
@@ -543,6 +562,7 @@
 	"descripcion1":"Destacado padre de líneas abiertas, con clásica cabeza Angus, buena conformación carnicera, sólida estructura, precoz y bien aplomado.",
 	"descripcion2":"Ideal curva de crecimiento con bajo peso al nacer, sobresalientes DEPs para peso al destete y final, junto a una buena aptitud materna y nivel de engrasamiento.",
 	"descripcion3":"Muy útil para inyectar genética productiva, junto a improntas de precocidad, calidad racial y facilidad de mantenimiento a campo."
+	,"ranking":0
 },
 
 {
@@ -571,7 +591,8 @@
 	"descripcion2":"Produce animales de rápida terminación y hembras mantenidas con buena calidad de ubres.",
 	"descripcion3":"Ideal para fijar calidad y el tipo correcto a líneas de la variedad colorada, un tanto desviadas del mismo."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 22,
@@ -599,7 +620,8 @@
 	"descripcion2":"Hijo de Quebrantao en madre Bust'n, vaca de grandes cualidades maternas y excelente cabeza. Con destacados DEPs para peso final y marmoreo.",
 	"descripcion3":"Ganador de prueba 2014, destacándose por su precocidad sexual y calidad seminal. Sus primeras crías nos confirman que es un toro mejorador de color e impresor de buenas masas musculares."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 23,
@@ -627,7 +649,8 @@
 	"descripcion2":"Conjuga en su pedigree a dos padres de líneas abiertas como lo son Mexicano y Sensation, siendo una opción de calidad para la apertura de sangres en la variedad colorada.",
 	"descripcion3":""
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 24,
@@ -655,7 +678,8 @@
 	"descripcion2":"Imprime buenos atributos maternos y color firme a su descendencia.",
 	"descripcion3":"Muy útil como continuador de planteles y rodeos estabilizados, aportando genética abierta y buen rendimiento carnicero."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 25,
@@ -683,7 +707,8 @@
 	"descripcion2":"Se destaca por sus DEPs de grasa dorsal y por la calidad racial que transmite a su descendencia, destacándose a Líder como abuelo materno.",
 	"descripcion3":"Recomendado para abrir sangres dentro de la variedad colorada, con el aporte de un sobresaliente fenotipo carnicero y una buena expresión muscular."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 26,
@@ -711,7 +736,8 @@
 	"descripcion2":"Muy buena calidad racial con bajo peso al nacer, buen área de ojo de bife y marmoreo como indicador de rendimiento carnicero.",
 	"descripcion3":"Recomendado para mejorar musculatura y terminación, reforzando estructura ósea y peso corporal dentro de un tamaño intermedio."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 27,
@@ -739,7 +765,8 @@
 	"descripcion2":"Moderado peso al nacer, buena genética para peso al destete y final, junto a sobresalientes DEPs para área de ojo de bife y grasa intramuscular.",
 	"descripcion3":"Recomendado para nivelar tamaño e imprimir blandura de engorde, reforzando musculatura, profundidad y arco de costillas."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 28,
@@ -767,7 +794,8 @@
 	"descripcion2":"Gran herramienta mejoradora; moderado peso al nacer, buena carga genética en aptitud materna y sobresaliente circunferencia escrotal adulta de 44 centímetros.",
 	"descripcion3":"Recomendado para nivelar tamaño, mejorando precocidad y conformación carnicera."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 29,
@@ -795,7 +823,8 @@
 	"descripcion2":"Balanceado crecimiento, con buenos pesos al destete y final, junto a una sobresaliente área de ojo de bife como indicador de desarrollo muscular precoz.",
 	"descripcion3":"De gran utilidad para estabilizar tamaño, junto a las buenas masas musculares que acompañan su precocidad genética."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 30,
@@ -823,7 +852,8 @@
 	"descripcion2":"Se destaca por su AOB, su Aptitud Materna y su facilidad de engorde. Su Madre, la X1730 se destaca por la excelente conformación de ubre.",
 	"descripcion3":"Utilizado intensamente en nuestros planteles PR para solidificar pigmentación, blandura de engorde, reforzar estructura ósea y aptitud materna."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 31,
@@ -851,7 +881,8 @@
 	"descripcion2":"Hijo de A Punto! y nieto de YaEstá! (ambos padres de gran productividad y probada facilidad de parto), sobre una madre Boston sinónimo de longevidad y de buenos componentes maternos.",
 	"descripcion3":"Recomendado para vaquillonas primerizas, moderando tamaño e imprimiendo precocidad y facilidad de terminación a campo."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 32,
@@ -879,7 +910,8 @@
 	"descripcion2":"Sobresalientes DEPs para crecimiento, circunferencia escrotal y AOB, moderado peso al nacer, con gran apertura de sangre.",
 	"descripcion3":"Ganador de Prueba 2013, sus crías se destacan por su buen color, moderado tamaño y bajo peso al nacer."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 33,
@@ -907,7 +939,8 @@
 	"descripcion2":"Marcado liderazgo en peso al destete y peso final, aptitud materna, espesor de grasa dorsal y circunferencia escrotal.",
 	"descripcion3":"Recomendado para abrir sangres, imprimiendo buena pigmentación y color, junto a un biotipo netamente mejorador de haciendas livianas."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 34,
@@ -935,7 +968,8 @@
 	"descripcion2":"Tiene muy balanceada curva de crecimiento y muy buena AM.",
 	"descripcion3":"Es utilizado en los planteles PR por su gran respaldo genético y como mejorador de aptitud materna."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 35,
@@ -963,7 +997,8 @@
 	"descripcion2":"Moderado peso al nacer, balanceados componentes maternos y buen desempeño de DEPs para peso final y área de ojo de bife.",
 	"descripcion3":"Gran reservorio genético para la raza,siendo muy útil tanto para la continuación de planteles astados, como también para la apertura de rodeos mochos."
 
-	},
+		,"ranking":0
+},
 
 
 {
@@ -993,7 +1028,8 @@
 	"descripcion2":"Marcado liderazgo en peso al destete, peso final, y área de ojo de bife. Sus hijas se destacan por su fertilidad.",
 	"descripcion3":"De gran utilidad para imprimir calidad racial y buena musculatura dentro de un tamaño intermedio, con precocidad y facilidad de mantenimiento a campo."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 37,
@@ -1021,7 +1057,8 @@
 	"descripcion2":"Toro de elevado PD y PF, con muy buena CE.",
 	"descripcion3":"En la búsqueda constante de nuevas líneas genéticas, Soy del Palo está siendo muy utilizado para imprimir todas sus calidades productivas."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 38,
@@ -1050,7 +1087,8 @@
 	"descripcion2":"Buena aptitud materna y buena curva de crecimiento,con moderado peso al nacer, junto a sobresalientes DEPs para área de ojo de bife y grasa intramuscular.",
 	"descripcion3":"Marcada fortaleza y largo de lomo, muy buena cabeza, correcto prepucio y de movimientos libres en su desplazamiento."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 39,
@@ -1079,7 +1117,8 @@
 	"descripcion2":"Ideal curva de crecimiento, con bajo peso al nacer, muy buenos DEPs para crecimiento,junto a una sobresaliente circunferencia escrotal, área de ojo de bife y nivel de engrasamiento.",
 	"descripcion3":"Recomendado como fijador de buenas características raciales, mejorador por excelencia de musculatura, arco de costillas y estructura ósea."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 40,
@@ -1107,7 +1146,8 @@
 	"descripcion2":"Impecable performance genética, con moldeada curva de crecimiento y liderazgo en cuatro de los rasgos evaluados.",
 	"descripcion3":"Hijo de Lead Gun en madre Alí,y esta a su vez sobre la Salacoa Pine Lass 23D2, una de las donantes más productivas del Brangus Americano en los últimos tiempos."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 41,
@@ -1136,7 +1176,8 @@
 	"descripcion2":"Excepcional peso al destete y final y circunferencia escrotal, con moderado peso al nacer dentro de un biotipo moderado. Posee gen colorado.",
 	"descripcion3":"Utilizado intensamente en La Leonor para moderar tamaño, fijando gran calidad racial y precocidad en su descendencia."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 42,
@@ -1165,7 +1206,8 @@
 	"descripcion2":"Moderado peso al nacer y sobresaliente aptitud materna, con buenos pesos al destete y final, y marcado liderazgo en área de ojo de bife.",
 	"descripcion3":"Recomendado para masificar la nobleza de sus ancestros, mejorando musculatura, precocidad y calidad racial."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 43,
@@ -1193,7 +1235,8 @@
 	"descripcion2":"Líder en cinco caracteres de importancia económica: peso al nacer, peso al destete y final, circunferencia escrotal, área de ojo de bife.",
 	"descripcion3":"Pedigree abierto para ser utilizado en todo tipo de planteles y rodeos; Pathfinder sobre una poderosa madre Sundance/Classic de probada producción en Argentina."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 44,
@@ -1222,7 +1265,8 @@
 	"descripcion2":"Sobresalientes DEPs para peso al destete, aptitud materna, peso final, circunferencia escrotal, área de ojo de bife y marmoreo.",
 	"descripcion3":"Recomendado para imprimir musculatura y hueso, moderando rodeos a través de su precocidad y calidad racial."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 45,
@@ -1251,7 +1295,8 @@
 	"descripcion2":"Líder en circunferencia escrotal, con bajo peso al nacer y elevada área de ojo de bife.",
 	"descripcion3":"Muy útil para los sistemas de cría, en función de sus DEPs, de la femineidad que poseen sus hijas en La Leonor y los elevados pesos al destete."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 46,
@@ -1280,7 +1325,8 @@
 	"descripcion2":"Líder en crecimiento, aptitud materna, área de ojo de bife, grasa dorsal, con 43 cm. de circunferencia escrotal adulta.",
 	"descripcion3":"Recomendado para fortalecer caracteres cebuínos dentro del Brangus, aportando rusticidad y adaptación al medio."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 47,
@@ -1309,7 +1355,8 @@
 	"descripcion2":"Padre muy completo, de buenos mantos musculares, correcto prepucio y buen largo de lomo. Siendo líder en peso al destete, peso final y circunferencia escrotal.",
 	"descripcion3":"De gran utilidad para crear nuevas líneas genéticas, combinando las mejores corrientes de sangre Brahman y Brangus adaptadas."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 48,
@@ -1338,7 +1385,8 @@
 	"descripcion2":"Muy buenas DEPs para caracteres de crecimiento con adecuada circunferencia escrotal.",
 	"descripcion3":"De gran utilidad para fijar características raciales, pelo corto y buena musculatura."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 49,
@@ -1367,7 +1415,8 @@
 	"descripcion2":"Moderado peso al nacer, buen desempeño al destete y final, junto a una buena circunferencia escrotal y marcado liderazgo en área de ojo de bife.",
 	"descripcion3":"Muy útil para mejorar rodeos faltos de calidad racial, aportando buenos componentes maternos, musculatura y un definido carácter Brangus."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 50,
@@ -1396,7 +1445,8 @@
 	"descripcion2":"Ideal curva de crecimiento, combinando con bajo peso al nacer y marcado liderazgo en peso al destete, peso final, área de ojo de bife y circunferencia escrotal.",
 	"descripcion3":"Recomendado para inyectar musculatura y potencia racial en planteles y en rodeos de vacas livianas, carentes de estructura y volumen corporal."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 51,
@@ -1407,7 +1457,7 @@
 	"imagen_toro":"img/hollywood-top.jpg",
 	"imagen_toro2":"img/hollywod-back.jpg",
 	"aptosvaquillonas":"",
-	"precio":"",
+	"precio":0,
 
     "definitivo":"7º Gen.",
 	"fn":"06/09/13",
@@ -1425,7 +1475,8 @@
 	"descripcion2":"De gran balance en sus DEP, se destaca por su moderado peso al nacer y excepcional CE y AOB. Tiene un pedigree abierto y de gran respaldo genético, ya que sus dos abuelas y madre son donantes de primera línea en Salacoa.",
 	"descripcion3":"Muy útil para imprimir precocidad, cualidades carniceras y fertilidad en su descendencia."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 52,
@@ -1454,7 +1505,8 @@
 	"descripcion2":"Líder en peso al destete y peso final, acompañado de una circunferencia escrotal adulta de 43 cm.",
 	"descripcion3":"De gran utilidad para mejorar crecimiento en planteles y rodeos carentes de hueso y tamaño."
 
-	},
+		,"ranking":0
+},
 {
 	"id": 53,
 	"nombre_toro":"Relmún",
@@ -1482,7 +1534,8 @@
 	"descripcion2":"Marcado liderazgo en aptitud materna, con bajo peso al nacer y buen peso al destete, peso final y circunferencia escrotal, con medición adulta de 43 cm.",
 	"descripcion3":"De gran consistencia genética, siendo uno de los padres más difundido y con más crías registradas dentro de la raza."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 54,
@@ -1511,7 +1564,8 @@
 	"descripcion2":"Hijo de Big Time y una de las mejores donantes de La Leonor como es la 3432, madre entre otros de Gran Capitán. Posee destacada habilidad materna y moderado peso al nacer.",
 	"descripcion3":"Sus primeras crías en la Leonor demuestran que es un toro que imprime sus cualidades en todo tipo de rodeo."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 55,
@@ -1540,7 +1594,8 @@
 	"descripcion2":"Destacada curva de crecimiento, con sobresalientes DEPs para circunferencia escrotal y área de ojo de bife.",
 	"descripcion3":"Recomendado para fijar biotipos de calidad, mejorando productividad en su conjunto dentro de un tamaño moderado."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 56,
@@ -1568,7 +1623,8 @@
 	"descripcion2":"Es líder en PD y PF, con muy buena CE y datos de carcasa.",
 	"descripcion3":"Se lo utiliza para mejorar cualidades carniceras y curvas de crecimiento, con el respaldo de su pedigree."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 57,
@@ -1596,7 +1652,8 @@
 	"descripcion2":"Se destaca por su extraordinario marmoreo y curva de crecimiento.",
 	"descripcion3":"El toro más utilizado en La Leonor por la nobleza de su pedigree y sus DEP. Sus crías sobresalen por su ancho de lomo, firmeza de color y calidad racial."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 58,
@@ -1625,7 +1682,8 @@
 	"descripcion2":"Líder en tres caracteres de importancia económica: peso al destete, final y espesor de grasa dorsal, como indicador de madurez temprana.",
 	"descripcion3":"Buen choque de sangres entre Liberal, Coligüé (hijo de Colliqueo, sinónimo de fertilidad y precocidad) y Cardenal, grandes padres productivos en la variedad colorada."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 59,
@@ -1654,7 +1712,8 @@
 	"descripcion2":"Gran apertura de sangre, hijo de Federado en una vaca cuartina de La Leonor. Muy buenos DEPs para crecimiento.",
 	"descripcion3":"Utilizado para la apertura y para imprimir su destacado color en vacas bayas."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 60,
@@ -1682,7 +1741,8 @@
 	"descripcion2":"Combina en sus DEPs un buen crecimiento, junto a una sobresaliente circunferencia escrotal adulta y grasa de terminación.",
 	"descripcion3":"De gran utilidad por su pedigree abierto, reforzando hueso, profundidad y peso corporal en vacas livianas y faltas de conformación."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 61,
@@ -1711,7 +1771,8 @@
 	"descripcion2":"Destacados DEPs en los cuales se conjugan muy buen crecimiento con aptitud materna, circunferencia escrotal y marmoreo, con una circunferencia escrotal a los 20 meses de 44 cm.",
 	"descripcion3":"Utilizado en los rodeos puro controlados de La Leonor para imprimir estructura ósea, buenas masas musculares y el acebusamiento necesario para nuestros sistemas de cría."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 62,
@@ -1740,7 +1801,8 @@
 	"descripcion2":"Líder en peso al destete, peso final, área de ojo de bife. con circunferencia escrotal adulta de 44 cm.",
 	"descripcion3":"Recomendado para abrir líneas de sangre, aportando rusticidad en rodeos con falta de adaptación marginal."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 63,
@@ -1769,7 +1831,8 @@
 	"descripcion2":"Balanceada curva de crecimiento, con buen peso al destete y destacadas DEPs para área de ojo de bife.",
 	"descripcion3":"Gran herramienta genética para abrir líneas de sangre; de probada producción sobre madres Angus para la formación de nuevas generaciones de Brangus colorado."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 64,
@@ -1798,7 +1861,8 @@
 	"descripcion2":"Balanceada curva de crecimiento, con moderado peso al nacer y buenos componentes maternos, que lo perfilan como un padre a tener en cuenta en la producción de hembras.",
 	"descripcion3":"Muy útil para hacer madres productivas y longevas, mejorando estructura ósea, largo corporal, volumen y peso en haciendas carentes de estos rasgos."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 65,
@@ -1809,7 +1873,7 @@
 	"imagen_toro":"img/dinasty-top.jpg",
 	"imagen_toro2":"img/dinasty-back.jpg",
 	"aptosvaquillonas":"",
-	"precio":"",
+	"precio":0,
     
     "definitivo":"3º GEN.",
 	"fn":"29/10/04",
@@ -1827,7 +1891,8 @@
 	"descripcion2":"De balanceada curva de crecimiento, es hijo del gran productor de campeones CX Chief Advantage 143/L y de la 198/P, una de las donantes más longevas del programa de Triple JR.",
 	"descripcion3":"Un padre para corregir prepucio, desplazamiento y volumen corporal, además de un pedigree muy interesante."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 66,
@@ -1856,7 +1921,8 @@
 	"descripcion2":"Buena curva de crecimiento, con destacados DEPs para peso al destete y final, junto a un buen nivel de grasa intramuscular.",
 	"descripcion3":"Recomendado para abrir sangres dentro de la variedad colorada, aportando buenos mantos musculares y potencia racial."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 67,
@@ -1885,7 +1951,8 @@
 	"descripcion2":"Buen peso al destete y final, junto a destacadas DEPs para circunferencia escrotal y composición corporal.",
 	"descripcion3":"De gran utilidad para imprimir precocidad, blandura de engorde y características carniceras dentro de un tamaño moderado."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 68,
@@ -1914,7 +1981,8 @@
 	"descripcion2":"Buen peso al destete y sobresaliente peso final, junto a destacados DEPs para área de ojo de bife y grasa dorsal.",
 	"descripcion3":"Recomendado para inyectar precocidad y facilidad de terminación, reforzando arco de costillas y ancho corporal."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 69,
@@ -1943,7 +2011,8 @@
 	"descripcion2":"Conjuga en su pedigree a dos líneas de probada producción (Canberra y Twosome), acompañado de un perímetro escrotal adulto de 43 cm.",
 	"descripcion3":"Recomendado para consolidar camiseta Braford, acebuzando rodeos cuartinos y agregando un sólido color, pigmentación y largo corporal."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 70,
@@ -1972,7 +2041,8 @@
 	"descripcion2":"Sus crías sobresalen por sus masas musculares y camiseta racial.",
 	"descripcion3":"Propietario: El Cuarteto S.A."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 71,
@@ -2001,7 +2071,8 @@
 	"descripcion2":"Moderado peso al nacer y facilidad de parto en vaquillonas primerizas, junto a una balanceada curva de crecimiento y adecuada composición corporal.",
 	"descripcion3":"Hijo de Runner en madre Canguro (mejor hembra de lote de la Nacional Braford 2010), es un padre ideal para imprimir precocidad, facilidad de engorde y buena profundidad."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 72,
@@ -2030,7 +2101,8 @@
 	"descripcion2":"Balanceada curva de crecimiento, junto a una probada facilidad de parto, y destacados DEPs para circunferencia escrotal y grasa intramuscular.",
 	"descripcion3":"Recomendado para inyectar precocidad y facilidad de terminación, reforzando el arco de costilla y ancho corporal."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 73,
@@ -2059,7 +2131,8 @@
 	"descripcion2":"Sobresaliente aptitud materna, con marcadas grasas dorsal e intramuscular, como indicadoras de facilidad de terminación.",
 	"descripcion3":"Recomendado para mejorar profundidad y arco de costillas, uniformando biotipo racial y mantos musculares."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 74,
@@ -2088,7 +2161,8 @@
 	"descripcion2":"Destacado peso al destete y moderado peso al nacer con una circunferencia escrotal a los 20 meses de 40 cm.",
 	"descripcion3":"Sus primeras crías lo muestran como un toro que transmite excelente pigmentación, con gran homogeneidad de sus crías en todo tipo de vientres."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 75,
@@ -2117,7 +2191,8 @@
 	"descripcion2":"Balanceada composición corporal entre músculo y grasa, acompañada de sobresalientes DEPs para peso al destete y final.",
 	"descripcion3":"Hijo de Capitán en madre Deliverance, siendo su uso recomendado para fijar características raciales en rodeos acebuzados y dispersos en color."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 76,
@@ -2146,7 +2221,8 @@
 	"descripcion2":"Sobresalientes DEPs para aptitud materna y peso final, junto a una buena área de ojo de bife y nivel de engrasamiento a temprana edad.",
 	"descripcion3":"De gran utilidad para masificar en rodeos faltos de uniformidad, aportando fortaleza ósea, precocidad y facilidad de terminación."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 77,
@@ -2175,7 +2251,8 @@
 	"descripcion2":"Buena expresión masculina, mocho natural, pigmentación y anteojeras completas, fuerte estructura ósea y circunferencia escrotal adulta de 44 cm.",
 	"descripcion3":"De gran utilidad para la formación de nuevas líneas Braford, y para remontar tamaño y caracterización cebuína en rodeos livianos o muy pampizados."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 78,
@@ -2204,7 +2281,8 @@
 	"descripcion2":"Campeón Avanzado de la Nacional de Corrientes 2012, combinando en su pedigree a Neimen Xpo, Canberra y Ascot Milenium.",
 	"descripcion3":"Muy útil para mejorar hueso y musculatura, recomendándose su utilización sobre vientres carentes de pigmentación y excedidos de blanco."
 
-	},
+		,"ranking":1
+},
 
 {
 	"id": 79,
@@ -2233,7 +2311,8 @@
 	"descripcion2":"Balanceado perfil genético en todas las mediciones de importancia económica.",
 	"descripcion3":"Fijador de buenas características raciales, especialmente sobre vientres 1/2 sangre y heterogéneos en color."
 
-	},
+		,"ranking":1
+},
 
 {
 	"id": 80,
@@ -2262,7 +2341,8 @@
 	"descripcion2":"Destacado perfil de DEPs para peso al destete, aptitud materna,  peso final, circunferencia escrotal y área de ojo de bife.",
 	"descripcion3":"Recomendado para aportar hueso, peso muscular y características raciales en rodeos heterogéneos."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 81,
@@ -2273,7 +2353,7 @@
 	"imagen_toro":"img/garua-top.jpg",
 	"imagen_toro2":"img/garua-back.jpg",
 	"aptosvaquillonas":"18_meses",
-	"precio":"",
+	"precio":0,
     
     "controlado":"3º GEN.",
 	"fn":"04/02/09",
@@ -2291,7 +2371,8 @@
 	"descripcion2":"Líder en cuatro caracteres de importancia económica: peso al destete, peso final, grasa dorsal e intramuscular.",
 	"descripcion3":"Ideal para utilizarlo en planteles selectos y en rodeos de generaciones avanzadas, aportando muy buenos atributos genéticos y de calidad racial."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 82,
@@ -2319,7 +2400,8 @@
 	"descripcion2":"Con DEPs equilibrados y sobresaliente área de ojo de bife. Ganador de prueba 2012, donde se destacó por su calidad seminal y por poseer una madre cuyo intervalo entre partos es de 342 días.",
 	"descripcion3":"Un padre que transmite gran calidad racial, corrección estructural y homogeneidad de su descendencia."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 83,
@@ -2347,7 +2429,8 @@
 	"descripcion2":"De excepcionales DEPs, ya que se encuentra en el 5% superior para peso al destete, peso final, área de ojo de bife y grasa dorsal, y en el 10% para circunferencia escrotal, con muy buena aptitud materna.",
 	"descripcion3":"Su utilización temprana a los 15 meses, producto de su precocidad sexual, nos permite afirmar que es un gran padre para cualquier rodeo Brahman del país."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 84,
@@ -2375,7 +2458,8 @@
 	"descripcion2":"Líder en peso al destete, peso final, aptitud materna, área de ojo de bife y circunferencia escrotal, con medición adulta de 44 cm.",
 	"descripcion3":"Recomendado para mejorar planteles puros, donde se requiera pureza racial y alto potencial genético."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 85,
@@ -2403,7 +2487,8 @@
 	"descripcion2":"Moderado peso al nacer, con alto peso al destete y final, y sobresalientes DEPs para circunferencia escrotal, expresión muscular y grasa de terminación.",
 	"descripcion3":"Muy recomendado para cabañeros exigentes, imprimiendo un balanceado y precoz biotipo carnicero."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 86,
@@ -2431,7 +2516,8 @@
 	"descripcion2":"Rápida curva de crecimiento, con marcado liderazgo en circunferencia escrotal, área de ojo de bife y facilidad de engrasamiento.",
 	"descripcion3":"Recomendado especialmente en cruzamientos con vientres británicos, para la obtención de animales precoces y de buena expresión muscular."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 87,
@@ -2459,7 +2545,8 @@
 	"descripcion2":"Buen perfil genético para crecimiento, circunferencia escrotal, área de ojo de bife y grasa dorsal.",
 	"descripcion3":"Recomendado para imprimir buenos mantos de carne, precocidad, mansedumbre y blandura de engorde."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 88,
@@ -2487,7 +2574,8 @@
 	"descripcion2":"Destacada trilogía genética en crecimiento, circunferencia escrotal y área de ojo de bife, como indicador de desarrollo muscular.",
 	"descripcion3":"Ideal para perpetuar las clásicas líneas genéticas del Brahman argentino: precoces, rústicas y de alta productividad."
 
-	},
+		,"ranking":1
+},
 
 {
 	"id": 89,
@@ -2515,7 +2603,8 @@
 	"descripcion2":"Líder en seis caracteres: peso al destete y final, circunferencia escrotal, área de ojo de bife, aptitud materna y espesor de grasa dorsal.",
 	"descripcion3":"Recomendado para inyectar productividad en planteles Brahman y en cruzamientos que refloten características cebuínas."
 
-	},
+		,"ranking":0
+},
 
 {
 	"id": 90,
@@ -2543,7 +2632,8 @@
 	"descripcion2":"Marcado liderazgo genético para peso al destete, peso final, área de ojo de bife y grasa dorsal, indicando rápido crecimiento, buen rendimiento carnicero y facilidad de terminación.",
 	"descripcion3":"Muy útil para la raza por su pedigree abierto, siendo su uso además recomendado en cruzamientos, aportando precocidad y tamaño moderado."
 
-	},
+		,"ranking":1
+},
 
 {
 	"id": 91,
@@ -2554,7 +2644,7 @@
 	"imagen_toro":"img/mrv8-top.jpg",
 	"imagen_toro2":"img/mrv8-back.jpg",
 	"aptosvaquillonas":"",
-	"precio":"",
+	"precio":0,
     
 	"fn":"01/11/2014",
 	"hba":"21019",
@@ -2568,4 +2658,5 @@
 	"descripcion2":"Se encuentra en el 5% inferior para el peso al nacer y en el 10% superior para el peso al destete, circunferencia escrotal, área de ojo de bife y en el 2% para marmoreo.",
 	"descripcion3":"Estamos en presencia de un gran padre, dada su excelente curva de crecimiento, líneas, pedigree y cualidades carniceras"
 
+	,"ranking":1
 }  ]
