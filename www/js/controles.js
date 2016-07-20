@@ -100,7 +100,7 @@ aplicacion.factory('registroCantidadFavoritos',function(){
 
   itemsService.delete = function() {
     var nro_fav = localStorage.getItem("laslilas_nro_favoritos");
-    var nueva_vta = (Number(nro_fav) - Number(1));
+    var nueva_fav = (Number(nro_fav) - Number(1));
     if (nueva_fav < 0){
       nueva_fav = 0;
     }
