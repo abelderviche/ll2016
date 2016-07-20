@@ -2,13 +2,13 @@
         <h4>Tus Favoritos</h4>
 </div> 
 <ul class="collection">
-  <li ng-repeat="data in listado_favoritos track by $index" class="collection-item avatar" ng-click="borrarFavorito(data.esteeselkeydelarray)">
+  <li ng-repeat="data in listado_favoritos track by $index" class="collection-item avatar">
     <img src="{{data.imagen_toro}}" alt="" class="circle">
     <span class="title"><strong>{{data.nombre_toro}}</strong></span>
     <p>{{data.nombre_raza_cat}} <br>
        <a href="#/detalle/{{data.id}}">VER</a>
     </p>
-    <a class="secondary-content"><i class="material-icons black-text">close</i></a>
+    <a class="secondary-content" ng-click="borrarFavorito(data.esteeselkeydelarray)"><i class="material-icons black-text">close</i></a>
   </li>
   <li class="collection-item avatar" ng-show="no_favoritos">
     <i class="material-icons circle pink darken-3">star</i>
