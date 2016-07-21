@@ -34,14 +34,14 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
 <section>
 <div class="row grey lighten-3">
   <div class="col s6 color_lilas_texto">
-    <div class="col s4"><input type="number" style="border:none;font-size:2rem;" ng-init="count=1" value="{{count}}" ng-required>
+    <div class="col s8"><input type="number" style="border:none;font-size:2rem;" ng-init="count=1" value="" ng-required>
     </div>
-    <div class="col s4"><a ng-click="cant_dosis('remove',count)" ng-show="botones_venta" class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">remove</i></a>
+    <!--<div class="col s4"><a ng-click="cant_dosis('remove',count)" ng-show="botones_venta" class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">remove</i></a>
     </div>
-    <div class="col s4"><a ng-click="cant_dosis('add',count)" ng-show="botones_venta" class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">add</i></a>
+    <div class="col s4"><a ng-click="cant_dosis('add',count)" ng-show="botones_venta" class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">add</i></a>-->
     </div>
     <div class="col s12">
-      <span style="font-size:1.4rem;">Dosis: ${{detalle.precio}}</span>
+      <span style="font-size:1.4rem;">Precio Unitario: ${{detalle.precio}}</span>
       <span style="font-size:1.4rem;">Total: ${{detalle.precio * count}}</span>
     </div>
   </div>
@@ -95,7 +95,7 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
           <div class="row center color_lilas_texto">
             <div class="col s6" ng-click="agregarFavoritos(1)">
               <a ng-show="botones_favoritos" class="btn-floating btn-large waves-effect waves-light pink darken-3"><i class="material-icons">star</i></a> 
-              <a ng-hide="botones_favoritos" class="btn-floating btn-large waves-effect waves-light blue darken-3"><i class="material-icons">star</i></a>             
+              <a ng-hide="botones_favoritos" class="btn-floating btn-large waves-effect waves-light teal darken-3"><i class="material-icons">star</i></a>             
             </div>
 
             <div class="col s6" ng-click="agregarVentaAbajo(1)">
