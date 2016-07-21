@@ -245,6 +245,7 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
         $scope.botones_venta = false;
       };
       $scope.cant_dosis = function (tipo,count){
+        console.log("cant_dosis");
         if (tipo == "add"){
           $scope.count = count + 1;
         }
