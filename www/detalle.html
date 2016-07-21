@@ -45,8 +45,8 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
       <span style="font-size:1.1rem;">Total: ${{detalle.precio * count}}</span>
     </div>
   </div>
-    <div class="col s6 color_lilas_texto center-align" ng-click="agregarVenta(count)"><br>
-      <a href="mailto:laslilas@gmail.com?subject=Nueva Compra&body=Solicitud de nombre email %0A para el {{detalle.nombre_toro}} - {{detalle.nombre_raza}} %0A DOSIS ${{detalle.precio}} - Cantidad: {{count}} - Total: ${{detalle.precio * count}} (los precios no incluyen IVA) %0A www.laslilas.com/semen/{{detalle.nombre_toro | lowercase}}" class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank" ng-show="botones_venta"><i class="material-icons">shopping_cart</i></a>
+    <div class="col s6 color_lilas_texto center-align"><br>
+      <a ng-click="agregarVenta(count)" href="mailto:laslilas@gmail.com?subject=Nueva Compra&body=Solicitud de nombre email %0A para el {{detalle.nombre_toro}} - {{detalle.nombre_raza}} %0A DOSIS ${{detalle.precio}} - Cantidad: {{count}} - Total: ${{detalle.precio * count}} (los precios no incluyen IVA) %0A www.laslilas.com/semen/{{detalle.nombre_toro | lowercase}}" class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank" ng-show="botones_venta"><i class="material-icons">shopping_cart</i></a>
       <a ng-hide="botones_venta" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">check</i></a>
     </div>
 </div>        
