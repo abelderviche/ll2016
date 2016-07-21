@@ -248,6 +248,9 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
         if (tipo == "add"){
           $scope.count = count + 1;
         }
+        if (tipo == "same"){
+          $scope.count = count;
+        }        
         if (tipo == "remove"){
           if (count <= 1){
             $scope.count = 1;
