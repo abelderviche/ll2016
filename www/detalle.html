@@ -46,12 +46,12 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
       <a ng-hide="botones_venta" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">check</i></a>
     </div>
 </div>   
-<div class="row grey lighten-3"  ng-if="detalle.precio === 0" style="padding:13px"> 
-  <div class="col s6 color_lilas_texto">
-    CONSÚLTENOS
+<div class="row grey lighten-3"  ng-if="detalle.precio === 0"style="padding:13px"> 
+  <div class="col s6 color_lilas_texto" style="padding:15px">
+    Consultar precio
   </div>
-    <div class="col s6 color_lilas_texto center-align"><br>
-      <a  href="mailto:laslilas@gmail.com?subject=Consulta&body=Consulta de nombre email %0A para el {{detalle.nombre_toro}} - {{detalle.nombre_raza}} %0A www.laslilas.com/semen/{{detalle.nombre_toro | lowercase}}" class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank"><i class="material-icons">help_outline</i></a>
+    <div class="col s6 color_lilas_texto center-align">
+      <a  href="mailto:laslilas@gmail.com?subject=Consulta&body=Consulta de nombre email %0A para el {{detalle.nombre_toro}} - {{detalle.nombre_raza}} %0A www.laslilas.com/semen/{{detalle.nombre_toro | lowercase}}" class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank"><i class="material-icons">mail</i></a>
     </div>
 </div>       
 </section>
