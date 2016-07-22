@@ -232,6 +232,15 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
       $http.get('laslilas.json').success(function(data){
         var found = $filter('getById')(data, $scope.id_toro);
         $scope.detalle = found;
+        if(found.avanzado){
+          $scope.extra = "AVANZADO - " + found.avanzado;
+        }
+        if(found.definitivo){
+          $scope.extra = "DEFINITIVO - " + found.definitivo;
+        }
+        if(found.registrado){
+          $scope.extra = "REGISTRADO";
+        }
       });
       //boton carrito agrega pedido
       $scope.botones_venta = true;

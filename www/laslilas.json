@@ -21,7 +21,7 @@
 	"ce":"43 cm",
 	"peso":"940 kg",
 	"descripcion1":"Gran calidad racial, tamaño moderado, buena profundidad de costillas y circunferencia escrotal adulta de 43 cm.",
-	"descripcion2":"Bajo peso al nacer, buena velocidad de crecimiento y sobresalientes DEPs para área de ojo de bife y grasa de terminación, indicando un buen balance en composición corporal.",
+	"descripcion2":"Buena velocidad de crecimiento y sobresalientes DEPs para área de ojo de bife y grasa de terminación, indicando un buen balance en composición corporal.",
 	"descripcion3":"Recomendado para moderar tamaño, mejorar facilidad de engorde e inyectar calidad Angus en rodeos desviados de tipo y tamaño."
 	,"ranking":0
 },{
@@ -51,7 +51,7 @@
 	,"ranking":0
 },{
 	"id": 3,
-	"nombre_toro":"Río jordán",
+	"nombre_toro":"Río Jordán",
 	"nombre_raza":"angus_negro",
 	"nombre_raza_cat":"Angus Negro",
 	"destacado":0,
@@ -69,8 +69,8 @@
 	"frame":"4,4",
 	"ce":"42 cm",
 	"peso":"950 kg",
-	"descripcion1":"Toro de gran largo, correctos aplomos y cabeza bien característica de la raza. En su pedigree combina a grandes padres, como Arafat, Zorzal, y nieto de la LL 670, una de lasvacas más longevas y de gran producción del plantel de Las Lilas.",
-	"descripcion2":"Tiene bajo PN y alta AM, destacándose su sobresaliente marmoreo, cualidad muy buscada por los mercados más exigentes.",
+	"descripcion1":"Toro de gran largo, correctos aplomos y cabeza bien característica de la raza. En su pedigree combina a grandes padres, como Arafat, Zorzal, y nieto de la LL 670, una de las vacas más longevas y de gran producción del plantel de Las Lilas.",
+	"descripcion2":"Tiene bajo peso al nacer y alta aptitud materna, destacándose su sobresaliente marmoreo, cualidad muy buscada por los mercados más exigentes.",
 	"descripcion3":"Es utilizado para lograr vientres de gran fertilidad, calidad racial y longevos."
 	,"ranking":0
 },{
@@ -126,7 +126,7 @@
 	"peso":"1005 kg",
 	"descripcion1":"Padre de excepcional fenotipo y fortaleza ósea, con circunferencia escrotal adulta de 48 cm.",
 	"descripcion2":"Buena aptitud materna, con moderado peso al nacer, muy buena circunferencia escrotal y espesor de grasa dorsal.",
-	"descripcion3":"Muy útil para imprimir calidad,uniformar tipo y nivelar tamaño en hembras débiles y duras de engrasamiento."
+	"descripcion3":"Muy útil para imprimir calidad, uniformar tipo y nivelar tamaño en hembras débiles y duras de engrasamiento."
 
 		,"ranking":0
 },
@@ -182,7 +182,7 @@
 	"frame":"4,5",
 	"ce":"42 cm",
 	"peso":"945 kg",
-	"descripcion1":" Impresor de buenas cabezas y profundidad de costillas, precocidad y rápida terminación de animalesa campo.",
+	"descripcion1":" Impresor de buenas cabezas y profundidad de costillas, precocidad y rápida terminación de animales a campo.",
 	"descripcion2":"Portador de facilidad de parto, con sobresalientes DEPs para marmoreo.",
 	"descripcion3":"Recomendado para rodeos excedidos en tamaño, mejorando calidad racial dentro del clásico biotipo Angus."
 
@@ -298,8 +298,8 @@
 	"frame":"4,4",
 	"ce":"42 cm",
 	"peso":"915 kg",
-	"descripcion1":"Integrante del lote Campeón Nacional Angus 2007 e hijo del Gran Campeón Palermo 2004. Mucha corrección y calidad racial, tamaño moderado, carnicero y con buen esqueleto.",
-	"descripcion2":"Bajo peso al nacer combinado con un buen crecimiento y circunferencia escrotal y marmoreo.",
+	"descripcion1":"Integrante del lote Campeón Nacional Angus 2007 e hijo del Gran Campeón Palermo 2004. ",
+	"descripcion2":"Mucha corrección y calidad racial, tamaño moderado, carnicero y con buen esqueleto. Bajo peso al nacer combinado con un buen crecimiento y circunferencia escrotal y marmoreo.",
 	"descripcion3":"Muy útil como impresor de precocidad, buenas cabezas y blandura de engorde en rodeos faltos de uniformidad."
 
 		,"ranking":0
@@ -404,7 +404,7 @@
 	"precio":0,
 
 	"fn":"28/01/2014 ",
-	"semen": "imporatdo",
+	"semen": "importado",
 	"registro":"18069951",
 	"tatuaje":"40B",
 
@@ -415,7 +415,7 @@
 	"ce":"42 cm",
 	"peso":"S/I",
 	"descripcion1":"Es el mejor hijo de la excepcional EA Rose 918, que está demostrando todo su potencial a través del 4040 y de la Soo Line Rose 1019. Se destaca por su sobresaliente profundidad, ancho y buenos desplazamientos. ",
-	"descripcion2":"De excepcionales DEP, es líder en PD, CM, CE, AOB y marmoreo. ",
+	"descripcion2":"De excepcionales DEPs, es líder en peso al destete, combinado materno, circunferencia escrotal, area de ojo de bife y marmoreo. ",
 	"descripcion3":"Un toro para mejorar musculatura y lograr buenos pesos al destete, con todo el respaldo de la familia Rose."
 
 		,"ranking":0
@@ -502,7 +502,7 @@
 	"ce":"42 cm",
 	"peso":"890 kg",
 	"descripcion1":"Con un potencial genético poco común, al combinar sobresalientes DEP, biotipo muy atractivo y pedigree de excepción, contiene a dos de las mejores vacas del plantel de Las Lilas, como la 2022 y la 1222, por el gran productor de padres Quebrantao.",
-	"descripcion2":"Sus DEP combinan un moderado PN con muy buen PD, AM y AOB, con un extraordinario PF en un frame 4,3.",
+	"descripcion2":"Sus DEP combinan un moderado PN con muy buen PD, aptitud materna y área de ojo a bife, con un extraordinario PF en un frame 4,3.",
 	"descripcion3":"Sus primeras crías nos indican que será un gran padre de la raza."
 
 		,"ranking":0
@@ -849,7 +849,7 @@
 	"ce":"40 cm",
 	"peso":"896 kg",
 	"descripcion1":"Padre de gran calidad racial, conjugando pigmentación ocular, color cereza fuerte con gran profundidad de costilla y ancho de lomo.",
-	"descripcion2":"Se destaca por su AOB, su Aptitud Materna y su facilidad de engorde. Su Madre, la X1730 se destaca por la excelente conformación de ubre.",
+	"descripcion2":"Se destaca por su área de ojo a bife, su Aptitud Materna y su facilidad de engorde. Su Madre, la X1730 se destaca por la excelente conformación de ubre.",
 	"descripcion3":"Utilizado intensamente en nuestros planteles PR para solidificar pigmentación, blandura de engorde, reforzar estructura ósea y aptitud materna."
 
 		,"ranking":0
@@ -878,7 +878,7 @@
 	"ce":"42 cm",
 	"peso":"780 kg",
 	"descripcion1":"Tamaño moderado, precoz, bien manchado y de pigmentación completa, con gran calidad racial y corrección en todo su biotipo.",
-	"descripcion2":"Hijo de A Punto! y nieto de YaEstá! (ambos padres de gran productividad y probada facilidad de parto), sobre una madre Boston sinónimo de longevidad y de buenos componentes maternos.",
+	"descripcion2":"Hijo de A Punto! y nieto de YaEstá! (ambos padres de gran productividad y probada facilidad de parto), sobre una madre Boston; sinónimo de longevidad y de buenos componentes maternos.",
 	"descripcion3":"Recomendado para vaquillonas primerizas, moderando tamaño e imprimiendo precocidad y facilidad de terminación a campo."
 
 		,"ranking":0
@@ -907,7 +907,7 @@
 	"ce":"40 cm",
 	"peso":"840 kg",
 	"descripcion1":"Bajo peso al nacer, con excelente pigmentación ocular en ambos ojos, dentro de un biotipo bien carnicero y moderado.",
-	"descripcion2":"Sobresalientes DEPs para crecimiento, circunferencia escrotal y AOB, moderado peso al nacer, con gran apertura de sangre.",
+	"descripcion2":"Sobresalientes DEPs para crecimiento, circunferencia escrotal y área de ojo a bife, moderado peso al nacer, con gran apertura de sangre.",
 	"descripcion3":"Ganador de Prueba 2013, sus crías se destacan por su buen color, moderado tamaño y bajo peso al nacer."
 
 		,"ranking":0
@@ -964,8 +964,8 @@
 	"frame":"5",
 	"ce":"41 cm",
 	"peso":"910 kg",
-	"descripcion1":"Muy largo, con buenas masas musculares, buena estructura ósea,suave de adelante y pigmentación en ambos ojos y testículos. Hijo de Poderoso en la X1400, vaca de sobresaliente arco costal, gran calidad de ubre y fertilidad.",
-	"descripcion2":"Tiene muy balanceada curva de crecimiento y muy buena AM.",
+	"descripcion1":"Muy largo, con buenas masas musculares, buena estructura ósea, suave de adelante y pigmentación en ambos ojos y testículos. Hijo de Poderoso en la X1400, vaca de sobresaliente arco costal, gran calidad de ubre y fertilidad.",
+	"descripcion2":"Tiene muy balanceada curva de crecimiento y muy buena aptitud materna.",
 	"descripcion3":"Es utilizado en los planteles PR por su gran respaldo genético y como mejorador de aptitud materna."
 
 		,"ranking":0
@@ -1054,7 +1054,7 @@
 	"ce":"41 cm",
 	"peso":"922 kg",
 	"descripcion1":"Toro de gran atractivo fenotípico, destacándose su largo corporal, ancho de lomo, cuarto bien descendido y muy correcto prepucio.",
-	"descripcion2":"Toro de elevado PD y PF, con muy buena CE.",
+	"descripcion2":"Toro de elevado peso al destete y peso final, con muy buena circunferencia escrotal.",
 	"descripcion3":"En la búsqueda constante de nuevas líneas genéticas, Soy del Palo está siendo muy utilizado para imprimir todas sus calidades productivas."
 
 		,"ranking":0
@@ -1144,7 +1144,7 @@
 	"peso":"940 kg",
 	"descripcion1":"Portador de un gran carácter Brangus, sobresalientes mantos de carne, correcto prepucio y circunferencia escrotal adulta de 45 centímetros.",
 	"descripcion2":"Impecable performance genética, con moldeada curva de crecimiento y liderazgo en cuatro de los rasgos evaluados.",
-	"descripcion3":"Hijo de Lead Gun en madre Alí,y esta a su vez sobre la Salacoa Pine Lass 23D2, una de las donantes más productivas del Brangus Americano en los últimos tiempos."
+	"descripcion3":"Hijo de Lead Gun en madre Alí, y esta a su vez sobre la Salacoa Pine Lass 23D2, una de las donantes más productivas del Brangus Americano en los últimos tiempos."
 
 		,"ranking":0
 },
@@ -1431,7 +1431,7 @@
 
     "definitivo":"5º Gen.",
 	"fn":"23/01/07",
-	"semen": "imporatdo",
+	"semen": "importado",
 	"registro":"9692850",
 	"tatuaje":"33P6",
 
@@ -1461,7 +1461,7 @@
 
     "definitivo":"7º Gen.",
 	"fn":"06/09/13",
-	"semen": "imporatdo",
+	"semen": "importado",
 	"registro":"10241840",
 	"tatuaje":"23A53",
 
@@ -1472,7 +1472,7 @@
 	"ce":"41 cm",
 	"peso":"S/I kg",
 	"descripcion1":"El mejor hijo de New Vision of Salacoa 209Y2 en una madre Patton of Brinks 30T22, de gran calidad racial. Toro de sobresalientes masas musculares, ancho de lomo y adecuado grado de acebusamiento, con el respaldo de siete generaciones.",
-	"descripcion2":"De gran balance en sus DEP, se destaca por su moderado peso al nacer y excepcional CE y AOB. Tiene un pedigree abierto y de gran respaldo genético, ya que sus dos abuelas y madre son donantes de primera línea en Salacoa.",
+	"descripcion2":"De gran balance en sus DEP, se destaca por su moderado peso al nacer y excepcional CE y área de ojo a bife. Tiene un pedigree abierto y de gran respaldo genético, ya que sus dos abuelas y madre son donantes de primera línea en Salacoa.",
 	"descripcion3":"Muy útil para imprimir precocidad, cualidades carniceras y fertilidad en su descendencia."
 
 		,"ranking":0
@@ -1847,7 +1847,7 @@
     
     "definitivo":"3º GEN.",
 	"fn":"29/10/04",
-	"semen" :"imporatdo",
+	"semen" :"importado",
 	"registro":"10077158",
 	"tatuaje":"10T6",
 
@@ -1877,7 +1877,7 @@
     
     "definitivo":"3º GEN.",
 	"fn":"29/10/04",
-	"semen": "imporatdo",
+	"semen": "importado",
 	"registro":"10246901",
 	"tatuaje":"198/A",
 
@@ -2025,7 +2025,7 @@
 	"aptosvaquillonas":"",
 	"precio":"113",
     
-    "registrado":"",
+    "registrado":"REGISTRADO",
 	"fn":"20/09/12",
 	"hba":"104768",
 	"senasa":"E/T",
