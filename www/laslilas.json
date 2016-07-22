@@ -48,7 +48,7 @@
 	"descripcion2":"Probada facilidad de parto, acompañada de muy buenas DEPs para carcasa y aptitud materna.",
 	"descripcion3":" Un verdadero toro padre que transmite gran precocidad sexual, musculatura y gran adaptación a los ambientes más restrictivos."
 
-	,"ranking":0
+	,"ranking":1
 },{
 	"id": 3,
 	"nombre_toro":"Río Jordán",
@@ -157,7 +157,7 @@
 	"descripcion2":"Tiene muy buena curva de crecimiento y sobresaliente CE, lo cual confirma su gran precocidad sexual.",
 	"descripcion3":" El toro más utilizado en nuestros planteles PC, en busca de imprimir sus muy buenos valores de crecimiento en un frame bien moderado."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -505,7 +505,7 @@
 	"descripcion2":"Sus DEP combinan un moderado PN con muy buen PD, aptitud materna y área de ojo a bife, con un extraordinario PF en un frame 4,3.",
 	"descripcion3":"Sus primeras crías nos indican que será un gran padre de la raza."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -736,7 +736,7 @@
 	"descripcion2":"Muy buena calidad racial con bajo peso al nacer, buen área de ojo de bife y marmoreo como indicador de rendimiento carnicero.",
 	"descripcion3":"Recomendado para mejorar musculatura y terminación, reforzando estructura ósea y peso corporal dentro de un tamaño intermedio."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -765,7 +765,7 @@
 	"descripcion2":"Moderado peso al nacer, buena genética para peso al destete y final, junto a sobresalientes DEPs para área de ojo de bife y grasa intramuscular.",
 	"descripcion3":"Recomendado para nivelar tamaño e imprimir blandura de engorde, reforzando musculatura, profundidad y arco de costillas."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -1057,7 +1057,7 @@
 	"descripcion2":"Toro de elevado peso al destete y peso final, con muy buena circunferencia escrotal.",
 	"descripcion3":"En la búsqueda constante de nuevas líneas genéticas, Soy del Palo está siendo muy utilizado para imprimir todas sus calidades productivas."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -1623,7 +1623,7 @@
 	"descripcion2":"Es líder en PD y PF, con muy buena CE y datos de carcasa.",
 	"descripcion3":"Se lo utiliza para mejorar cualidades carniceras y curvas de crecimiento, con el respaldo de su pedigree."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -2041,7 +2041,7 @@
 	"descripcion2":"Sus crías sobresalen por sus masas musculares y camiseta racial.",
 	"descripcion3":"Propietario: El Cuarteto S.A."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -2101,7 +2101,7 @@
 	"descripcion2":"Balanceada curva de crecimiento, junto a una probada facilidad de parto, y destacados DEPs para circunferencia escrotal y grasa intramuscular.",
 	"descripcion3":"Recomendado para inyectar precocidad y facilidad de terminación, reforzando el arco de costilla y ancho corporal."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -2281,7 +2281,7 @@
 	"descripcion2":"Campeón Avanzado de la Nacional de Corrientes 2012, combinando en su pedigree a Neimen Xpo, Canberra y Ascot Milenium.",
 	"descripcion3":"Muy útil para mejorar hueso y musculatura, recomendándose su utilización sobre vientres carentes de pigmentación y excedidos de blanco."
 
-		,"ranking":1
+		,"ranking":0
 },
 
 {
@@ -2311,7 +2311,7 @@
 	"descripcion2":"Balanceado perfil genético en todas las mediciones de importancia económica.",
 	"descripcion3":"Fijador de buenas características raciales, especialmente sobre vientres 1/2 sangre y heterogéneos en color."
 
-		,"ranking":1
+		,"ranking":0
 },
 
 {
@@ -2429,7 +2429,7 @@
 	"descripcion2":"De excepcionales DEPs, ya que se encuentra en el 5% superior para peso al destete, peso final, área de ojo de bife y grasa dorsal, y en el 10% para circunferencia escrotal, con muy buena aptitud materna.",
 	"descripcion3":"Su utilización temprana a los 15 meses, producto de su precocidad sexual, nos permite afirmar que es un gran padre para cualquier rodeo Brahman del país."
 
-		,"ranking":0
+		,"ranking":1
 },
 
 {
@@ -2574,7 +2574,7 @@
 	"descripcion2":"Destacada trilogía genética en crecimiento, circunferencia escrotal y área de ojo de bife, como indicador de desarrollo muscular.",
 	"descripcion3":"Ideal para perpetuar las clásicas líneas genéticas del Brahman argentino: precoces, rústicas y de alta productividad."
 
-		,"ranking":1
+		,"ranking":0
 },
 
 {
@@ -2632,7 +2632,7 @@
 	"descripcion2":"Marcado liderazgo genético para peso al destete, peso final, área de ojo de bife y grasa dorsal, indicando rápido crecimiento, buen rendimiento carnicero y facilidad de terminación.",
 	"descripcion3":"Muy útil para la raza por su pedigree abierto, siendo su uso además recomendado en cruzamientos, aportando precocidad y tamaño moderado."
 
-		,"ranking":1
+		,"ranking":0
 },
 
 {
@@ -2658,5 +2658,5 @@
 	"descripcion2":"Se encuentra en el 5% inferior para el peso al nacer y en el 10% superior para el peso al destete, circunferencia escrotal, área de ojo de bife y en el 2% para marmoreo.",
 	"descripcion3":"Estamos en presencia de un gran padre, dada su excelente curva de crecimiento, líneas, pedigree y cualidades carniceras"
 
-	,"ranking":1
+	,"ranking":0
 }  ]

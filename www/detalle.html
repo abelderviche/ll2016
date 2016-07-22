@@ -58,13 +58,16 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
 <!-- HASTA acá ABEL -->
         <section class="descripcion">
           <div class="row grey lighten-3">
-            <div class="col s6">
+            <div class="col s12">
               <div>{{detalle.nombre_toro}}</div>
               <div>{{extra}}</div>
-              <div>F.N {{detalle.fn}}</div>
-              <div>{{detalle.hba?'HBA '+detalle.hba:' -'}}</div>
-              <div>SENASA {{detalle.senasa}}</div>
-              <div>ADN {{detalle.adn}}</div>
+              <div>{{detalle.fn?'F.N '+detalle.fn:''}}</div>
+              <div>{{detalle.hba?'HBA '+detalle.hba:''}}</div>
+              <div>{{detalle.senasa?'SENASA '+detalle.senasa:''}}</div>
+              <div>{{detalle.adn?'ADN '+detalle.adn:''}}</div>
+              <div>{{detalle.semen?'Semen '+detalle.semen:''}}</div>
+              <div>{{detalle.registro?'Registro '+detalle.registro:''}}</div>
+              <div>{{detalle.tatuaje?'Tatuaje '+detalle.tatuaje:''}}</div>
             </div>
            
           </div>

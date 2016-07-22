@@ -241,6 +241,12 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
         if(found.registrado){
           $scope.extra = "REGISTRADO";
         }
+        if(found.preparatorio){
+          $scope.extra = "PREPARATORIO - " + found.preparatorio;
+        }
+        if(found.controlado){
+          $scope.extra = "CONTROLADO - " + found.controlado;
+        }
       });
       //boton carrito agrega pedido
       $scope.botones_venta = true;
