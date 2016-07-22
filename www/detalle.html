@@ -32,14 +32,10 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
         </section>-->
 <!-- desde acá ABEL -->
 <section>
-<div class="row grey lighten-3">
+<div class="row grey lighten-3"  ng-if="detalle.precio > 0" style="padding:13px"> 
   <div class="col s6 color_lilas_texto">
     <div class="col s12"><input type="number" style="font-size:2rem;" ng-init="count=1" ng-model="count" value="" ng-keypress="cant_dosis('same',count)" ng-required>
     </div>
-    <!--<div class="col s4"><a ng-click="cant_dosis('remove',count)" ng-show="botones_venta" class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">remove</i></a>
-    </div>
-    <div class="col s4"><a ng-click="cant_dosis('add',count)" ng-show="botones_venta" class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">add</i></a>
-    </div>-->
     <div class="col s12">
       <span style="font-size:1.1rem;">Precio U.: ${{detalle.precio}}</span>
       <span style="font-size:1.1rem;">Total: ${{detalle.precio * count}}</span>
@@ -49,23 +45,32 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
       <a ng-click="agregarVenta(count)" href="mailto:laslilas@gmail.com?subject=Nueva Compra&body=Solicitud de nombre email %0A para el {{detalle.nombre_toro}} - {{detalle.nombre_raza}} %0A DOSIS ${{detalle.precio}} - Cantidad: {{count}} - Total: ${{detalle.precio * count}} (los precios no incluyen IVA) %0A www.laslilas.com/semen/{{detalle.nombre_toro | lowercase}}" class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank" ng-show="botones_venta"><i class="material-icons">shopping_cart</i></a>
       <a ng-hide="botones_venta" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">check</i></a>
     </div>
-</div>        
+</div>   
+<div class="row grey lighten-3"  ng-if="detalle.precio === 0" style="padding:13px"> 
+  <div class="col s6 color_lilas_texto">
+    CONSÚLTENOS
+  </div>
+    <div class="col s6 color_lilas_texto center-align"><br>
+      <a  href="mailto:laslilas@gmail.com?subject=Consulta&body=Consulta de nombre email %0A para el {{detalle.nombre_toro}} - {{detalle.nombre_raza}} %0A www.laslilas.com/semen/{{detalle.nombre_toro | lowercase}}" class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank"><i class="material-icons">help_outline</i></a>
+    </div>
+</div>       
 </section>
 <div ng-hide="botones_venta" class="row center-align"><br>
   <a href="#/carrito" class="waves-effect waves-light btn"><i class="material-icons right">send</i>Ver Pedidos</a>
 </div>
 <br>
 <!-- HASTA acá ABEL -->
-        <section class="descripcion">
+        <section class="descripcion" style="margin-top: -14px;">
           <div class="row grey lighten-3">
             <div class="col s12">
               <div>{{detalle.nombre_toro}}</div>
               <div>{{extra}}</div>
               <div>{{detalle.fn?'F.N '+detalle.fn:''}}</div>
               <div>{{detalle.hba?'HBA '+detalle.hba:''}}</div>
+              <div>{{detalle.aba?'ABA '+detalle.aba:''}}</div>
               <div>{{detalle.senasa?'SENASA '+detalle.senasa:''}}</div>
               <div>{{detalle.adn?'ADN '+detalle.adn:''}}</div>
-              <div>{{detalle.semen?'Semen '+detalle.semen:''}}</div>
+              <div>{{detalle.semen?'SEMEN '+detalle.semen:''}}</div>
               <div>{{detalle.registro?'Registro '+detalle.registro:''}}</div>
               <div>{{detalle.tatuaje?'Tatuaje '+detalle.tatuaje:''}}</div>
             </div>
@@ -84,11 +89,10 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
           </div>
           <div class="row grey lighten-3 ">
             <div class="col s12">
-              <ul>
-                <li>- {{detalle.descripcion1}}</li>
-                <li>- {{detalle.descripcion2}}</li>
-                <li>- {{detalle.descripcion3}}</li>
-              </ul>
+                <div>{{detalle.descripcion1?'- '+detalle.descripcion1:''}}</div>
+                <div>{{detalle.descripcion2?'- '+detalle.descripcion2:''}}</div>
+                <div>{{detalle.descripcion3?'- '+detalle.descripcion3:''}}</div>
+                <div>{{detalle.descripcion4?'- '+detalle.descripcion4:''}}</div>
             </div>
             
           </div>

@@ -404,7 +404,7 @@
 	"precio":0,
 
 	"fn":"28/01/2014 ",
-	"semen": "importado",
+	"semen": "IMPORTADO",
 	"registro":"18069951",
 	"tatuaje":"40B",
 
@@ -415,7 +415,7 @@
 	"ce":"42 cm",
 	"peso":"S/I",
 	"descripcion1":"Es el mejor hijo de la excepcional EA Rose 918, que está demostrando todo su potencial a través del 4040 y de la Soo Line Rose 1019. Se destaca por su sobresaliente profundidad, ancho y buenos desplazamientos. ",
-	"descripcion2":"De excepcionales DEPs, es líder en peso al destete, combinado materno, circunferencia escrotal, area de ojo de bife y marmoreo. ",
+	"descripcion2":"De excepcionales DEPs, es líder en peso al destete, combinado materno, circunferencia escrotal, área de ojo de bife y marmoreo. ",
 	"descripcion3":"Un toro para mejorar musculatura y lograr buenos pesos al destete, con todo el respaldo de la familia Rose."
 
 		,"ranking":0
@@ -474,7 +474,7 @@
 	"peso":"985 kg",
 	"descripcion1":"Padre de buena profundidad de costillas, con tamaño intermedio, correcto desplazamiento y sólida coloración.",
 	"descripcion2":"Probada facilidad de parto, destacándose la fertilidad y precocidad de sus hijas.",
-	"descripcion3":"De gran utilidad y especialmenterecomendado para moderar tamaño e uniformar rodeos, inyectando precocidad, firmeza de color y calidad Angus."
+	"descripcion3":"De gran utilidad y especialmente recomendado para moderar tamaño e uniformar rodeos, inyectando precocidad, firmeza de color y calidad Angus."
 
 		,"ranking":0
 },
@@ -501,8 +501,8 @@
 	"frame":"4,3",
 	"ce":"42 cm",
 	"peso":"890 kg",
-	"descripcion1":"Con un potencial genético poco común, al combinar sobresalientes DEP, biotipo muy atractivo y pedigree de excepción, contiene a dos de las mejores vacas del plantel de Las Lilas, como la 2022 y la 1222, por el gran productor de padres Quebrantao.",
-	"descripcion2":"Sus DEP combinan un moderado PN con muy buen PD, aptitud materna y área de ojo a bife, con un extraordinario PF en un frame 4,3.",
+	"descripcion1":"Con un potencial genético poco común, al combinar sobresalientes DEPs, biotipo muy atractivo y pedigree de excepción, contiene a dos de las mejores vacas del plantel de Las Lilas, como la 2022 y la 1222, por el gran productor de padres Quebrantao.",
+	"descripcion2":"Sus DEPs combinan un moderado peso al nacer con muy buen peso al destete, aptitud materna y área de ojo de bife, con un extraordinario peso final en un frame 4,3",
 	"descripcion3":"Sus primeras crías nos indican que será un gran padre de la raza."
 
 		,"ranking":1
@@ -849,7 +849,7 @@
 	"ce":"40 cm",
 	"peso":"896 kg",
 	"descripcion1":"Padre de gran calidad racial, conjugando pigmentación ocular, color cereza fuerte con gran profundidad de costilla y ancho de lomo.",
-	"descripcion2":"Se destaca por su área de ojo a bife, su Aptitud Materna y su facilidad de engorde. Su Madre, la X1730 se destaca por la excelente conformación de ubre.",
+	"descripcion2":"Se destaca por su área de ojo de bife, su Aptitud Materna y su facilidad de engorde. Su Madre, la X1730 se destaca por la excelente conformación de ubre.",
 	"descripcion3":"Utilizado intensamente en nuestros planteles PR para solidificar pigmentación, blandura de engorde, reforzar estructura ósea y aptitud materna."
 
 		,"ranking":0
@@ -907,7 +907,7 @@
 	"ce":"40 cm",
 	"peso":"840 kg",
 	"descripcion1":"Bajo peso al nacer, con excelente pigmentación ocular en ambos ojos, dentro de un biotipo bien carnicero y moderado.",
-	"descripcion2":"Sobresalientes DEPs para crecimiento, circunferencia escrotal y área de ojo a bife, moderado peso al nacer, con gran apertura de sangre.",
+	"descripcion2":"Sobresalientes DEPs para crecimiento, circunferencia escrotal y área de ojo de bife, moderado peso al nacer, con gran apertura de sangre.",
 	"descripcion3":"Ganador de Prueba 2013, sus crías se destacan por su buen color, moderado tamaño y bajo peso al nacer."
 
 		,"ranking":0
@@ -1012,7 +1012,7 @@
 	"aptosvaquillonas":"18_meses",
 	"precio":"108",
 
-    "definitivo":"4º Gen.",
+    "definitivo":"4º GEN.",
 	"fn":"14/09/09",
 	"hba":"125289",
 	"senasa":"I-67BG790",
@@ -1219,7 +1219,7 @@
 	"imagen_toro2":"img/navajo-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"145",
-
+	"definitivo":" ",
 	"fn":"03/04/11",
 	"hba":"133186",
 	"senasa":"I-65BG863",
@@ -1309,7 +1309,7 @@
 	"aptosvaquillonas":"",
 	"precio":"92",
 
-    "definitivo":"5º Gen.",
+    "avanzado":"5º Gen.",
 	"fn":"20/08/05",
 	"hba":"117619",
 	"senasa":"I-67BG626",
@@ -1431,7 +1431,7 @@
 
     "definitivo":"5º Gen.",
 	"fn":"23/01/07",
-	"semen": "importado",
+	"semen": "IMPORTADO",
 	"registro":"9692850",
 	"tatuaje":"33P6",
 
@@ -1461,7 +1461,7 @@
 
     "definitivo":"7º Gen.",
 	"fn":"06/09/13",
-	"semen": "importado",
+	"semen": "IMPORTADO",
 	"registro":"10241840",
 	"tatuaje":"23A53",
 
@@ -1472,7 +1472,7 @@
 	"ce":"41 cm",
 	"peso":"S/I kg",
 	"descripcion1":"El mejor hijo de New Vision of Salacoa 209Y2 en una madre Patton of Brinks 30T22, de gran calidad racial. Toro de sobresalientes masas musculares, ancho de lomo y adecuado grado de acebusamiento, con el respaldo de siete generaciones.",
-	"descripcion2":"De gran balance en sus DEP, se destaca por su moderado peso al nacer y excepcional CE y área de ojo a bife. Tiene un pedigree abierto y de gran respaldo genético, ya que sus dos abuelas y madre son donantes de primera línea en Salacoa.",
+	"descripcion2":"De gran balance en sus DEP, se destaca por su moderado peso al nacer y excepcional CE y área de ojo de bife. Tiene un pedigree abierto y de gran respaldo genético, ya que sus dos abuelas y madre son donantes de primera línea en Salacoa.",
 	"descripcion3":"Muy útil para imprimir precocidad, cualidades carniceras y fertilidad en su descendencia."
 
 		,"ranking":0
@@ -1573,8 +1573,8 @@
 	"nombre_raza":"brangus_colorado",
 	"nombre_raza_cat":"Brangus Colorado",
 	"destacado":0,
-	"imagen_toro":"img/capitan-top.jpg",
-	"imagen_toro2":"img/capitan-back.jpg",
+	"imagen_toro":"img/capitanbc-top.jpg",
+	"imagen_toro2":"img/capitanbc-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"150",
 
@@ -1696,7 +1696,7 @@
 	"aptosvaquillonas":"",
 	"precio":"100",
     
-    "avanzado":"",
+    "avanzado":"  ",
 	"fn":"27/03/12",
 	"hba":"141675",
 	"senasa":"I-67BG892",
@@ -1847,7 +1847,7 @@
     
     "definitivo":"3º GEN.",
 	"fn":"29/10/04",
-	"semen" :"importado",
+	"semen" :"IMPORTADO",
 	"registro":"10077158",
 	"tatuaje":"10T6",
 
@@ -1877,7 +1877,7 @@
     
     "definitivo":"3º GEN.",
 	"fn":"29/10/04",
-	"semen": "importado",
+	"semen": "IMPORTADO",
 	"registro":"10246901",
 	"tatuaje":"198/A",
 
@@ -1886,7 +1886,7 @@
 	"paf":"456 kg",
 	"frame":"6,0",
 	"ce":"42 cm",
-	"peso":"S/I",
+	"peso":"S/I kg",
 	"descripcion1":"Gran Campeón Houston 2015. Un padre con excelentes desplazamientos, de gran largo caporal, con sobresaliente línea inferior y sólida estructura.",
 	"descripcion2":"De balanceada curva de crecimiento, es hijo del gran productor de campeones CX Chief Advantage 143/L y de la 198/P, una de las donantes más longevas del programa de Triple JR.",
 	"descripcion3":"Un padre para corregir prepucio, desplazamiento y volumen corporal, además de un pedigree muy interesante."
@@ -2037,9 +2037,10 @@
 	"frame":"6,0",
 	"ce":"40 cm",
 	"peso":"954 kg",
-	"descripcion1":"Muy destacados mantos carniceros, gran estructura ósea, pelo corto y muy buena pigmentación. Líder en peso al destete y marmoreo, con muy destacada circunferencia escrotal.",
-	"descripcion2":"Sus crías sobresalen por sus masas musculares y camiseta racial.",
-	"descripcion3":"Propietario: El Cuarteto S.A."
+	"descripcion1":"Muy destacados mantos carniceros, gran estructura ósea, pelo corto y muy buena pigmentación.",
+	"descripcion2":"Líder en peso al destete y marmoreo, con muy destacada circunferencia escrotal.",
+	"descripcion3":"Sus crías sobresalen por sus masas musculares y camiseta racial.",
+	"descripcion4":"Propietario: El Cuarteto S.A."
 
 		,"ranking":1
 },
@@ -2057,7 +2058,7 @@
     
     "avanzado":"4º GEN.",
 	"fn":"03/06/11",
-	"hba":"2092351",
+	"aba":"2092351",
 	"senasa":"I-65BF1657",
 	"adn":"N0221944",
 
@@ -2145,7 +2146,7 @@
 	"aptosvaquillonas":"18_meses",
 	"precio":"115",
     
-    "avanzado":"",
+    "avanzado":"  ",
 	"fn":"21/08/12",
 	"hba":"141575",
 	"senasa":"I-67BG1688",
@@ -2297,7 +2298,7 @@
     
     "controlado":"3º GEN.",
 	"fn":"14/09/00",
-	"hba":"C25016",
+	"aba":"C25016",
 	"senasa":"I-83BF171",
 	"adn":"N0097241",
 
@@ -2355,7 +2356,7 @@
 	"aptosvaquillonas":"18_meses",
 	"precio":0,
     
-    "controlado":"3º GEN.",
+    "definitivo":"5º GEN.",
 	"fn":"04/02/09",
 	"hba":"103493",
 	"senasa":"I-67BF720",
@@ -2645,7 +2646,9 @@
 	"imagen_toro2":"img/mrv8-back.jpg",
 	"aptosvaquillonas":"",
 	"precio":0,
-    
+    "semen":"IMPORTADO",
+    "tatuaje":"259/7",
+    "registro":"907983",
 	"fn":"01/11/2014",
 	"hba":"21019",
 	"pan":"30 kg",
