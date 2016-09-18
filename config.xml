@@ -77,6 +77,8 @@
     <access origin="mailto:*" launch-external="yes" />
     <allow-intent href="geo:*" />
     <platform name="android">
+      <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.DeviceDefault" />
+
         <allow-intent href="market:*" />
             <splash src="res/android/drawable-hdpi/splash.png" density="land-hdpi"/>
             <splash src="res/android/drawable-ldpi/splash.png" density="land-ldpi"/>

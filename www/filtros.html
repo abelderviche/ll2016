@@ -10,13 +10,16 @@
 	}
 </style>
 <div class="color_lilas_texto" style="margin-top:30px">
-	<div class="row center">
+	<div class="row ">
 		<!--<select class="filtroRaza" name="filtroRaza" style="display:block!important">
 			<option ng-repeat="raza in razas" value="{{raza.id}}">{{raza.nombre}}</option>
 		</select>-->
-		<select style="display:block!important" name="show-filter" ng-model="catFilter"
-		   ng-options="raza as raza.nombre for raza in razas">
-		</select>
+		<div class="col s12">
+			<h6>Raza:</h6>
+			<select style="display:block!important" name="show-filter" ng-model="catFilter"
+			   ng-options="raza as raza.nombre for raza in razas">
+			</select>
+		</div>
 	</div>
 	<div class="row center">
 		<div class="s6 col" ng-click="activeRelevantes()">
