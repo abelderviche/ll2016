@@ -50,9 +50,9 @@ aplicacion.factory('registroVentas',function(){
   } else {
     var items = [];
   }
-    
+
   var itemsService = {};
-    
+
   itemsService.add = function(detalle) {
     var venta = {};
     var nro_vta = localStorage.getItem("laslilas_nro_ventas");
@@ -73,7 +73,7 @@ aplicacion.factory('registroVentas',function(){
     var items = JSON.parse(localStorage.getItem("laslilas_listado_ventas"));
     return items;
   };
-    
+
   return itemsService;
 });
 
@@ -118,9 +118,9 @@ aplicacion.factory('registroFavoritos',function(){
   } else {
     var items = [];
   }
-    
+
   var itemsService = {};
-    
+
   itemsService.add = function(detalle) {
     var venta = {};
     var nro_vta = localStorage.getItem("laslilas_nro_favoritos");
@@ -141,15 +141,43 @@ aplicacion.factory('registroFavoritos',function(){
     var items = JSON.parse(localStorage.getItem("laslilas_listado_favoritos"));
     return items;
   };
-    
+
   return itemsService;
 });
 
-aplicacion.controller('carritoCtrl',['$scope','$location','$http','registroVentas','registroCantidadVentas', function($scope,$location,$http,registroVentas,registroCantidadVentas){
+aplicacion.controller('carritoCtrl',['$scope','$location','$http','registroVentas','registroCantidadVentas','ngCart', function($scope,$location,$http,registroVentas,registroCantidadVentas,ngCart){
 
 //localStorage.removeItem("laslilas_nro_ventas");
 //localStorage.removeItem("laslilas_listado_ventas");
-  
+
+function getBody(){
+  var bodyText= "<table>";
+  bodyText += "<tr>test</tr>";
+  bodyText += "<tr>"+ngCart.getTotalItems()+"</tr>";
+  return bodyText;
+}
+
+  $scope.mail = function(){
+    var link = "mailto:laslilas@gmail.com?subject=Nueva Compra&body=";
+    link += encodeURIComponent(getBody());
+    console.log(link)
+    //window.location.href = link;
+    ngCart.empty();
+  }
+
+  $scope.vaciar = function(){
+    var r = confirm("Desea vaciar el carrito?");
+      if (r == true) {
+          ngCart.empty();
+          $scope.cantidad_carrito = ngCart.getTotalItems();
+      } else {
+          x = "You pressed Cancel!";
+      }
+  }
+
+$scope.cantidad_carrito = ngCart.getTotalItems();
+
+
   listar();
 
   //listamos los pedidos
@@ -191,7 +219,7 @@ aplicacion.controller('catalogoCtrl',['$scope','$location','$http', function($sc
      //localStorage.setItem("rc2016_email","");
     if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
       $scope.loginview = true;
-    } else {  
+    } else {
       $scope.loginview = false;
     }
 
@@ -267,7 +295,7 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
         }
         if (tipo == "same"){
           $scope.count = count;
-        }        
+        }
         if (tipo == "remove"){
           if (count <= 1){
             $scope.count = 1;
@@ -277,15 +305,15 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
         }
       }
       //boton carrito agrega pedido de abajo
-      $scope.botones_venta_abajo = true;      
+      $scope.botones_venta_abajo = true;
       $scope.agregarVentaAbajo = function (count){
         registroCantidadVentas.add();
         $scope.detalle.cantidad_dosis = $scope.count;
         registroVentas.add($scope.detalle);
         $scope.botones_venta_abajo = false;
-      }; 
+      };
       //boton favoritos
-      $scope.botones_favoritos = true;      
+      $scope.botones_favoritos = true;
       $scope.agregarFavoritos = function (count){
         registroCantidadFavoritos.add();
         $scope.detalle.cantidad_favoritos = $scope.count;
@@ -303,6 +331,9 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
             $scope.catalogo[i].precio = parseFloat($scope.catalogo[i].precio);
          };
       });
+      $http.get('razas.json').success(function(data){
+        $scope.razas = data;
+      });
       $scope.relevantes = false;
       $scope.ranking = false;
       $scope.filters = { };
@@ -314,21 +345,21 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
 
       $scope.activeRanking = function(){
         $scope.ranking = !$scope.ranking;
-        if ($scope.ranking) { 
-          $scope.filters.ranking = 1; 
+        if ($scope.ranking) {
+          $scope.filters.ranking = 1;
           $scope.src_ranking = "ranking2"
         }else{
           $scope.filters.ranking = '';
-          $scope.src_ranking = "ranking1" 
+          $scope.src_ranking = "ranking1"
         }
       }
-     
+
 
       $scope.activeRelevantes = function(){
         $scope.relevantes = !$scope.relevantes;
         if ($scope.relevantes) { $scope.filters.destacado = 1; $scope.relevante_src = "destacado2"}else{$scope.filters.destacado = '';$scope.relevante_src = "destacado1" }
       }
-     
+
      $scope.order = function(predicate,reverse) {
       $scope.reverse = reverse;
       $scope.predicate = predicate;
@@ -342,7 +373,7 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
         $scope.src_preasc = "masprecio1"
 
       }
-        
+
   };
 
 
@@ -355,13 +386,13 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
             $scope.colourIncludes.push(colour);
         }
     }
-    
+
     $scope.colourFilter = function(fruit) {
         if ($scope.colourIncludes.length > 0) {
             if ($.inArray(fruit.aptosvaquillonas, $scope.colourIncludes) < 0)
                 return;
         }
-        
+
         return fruit;
     }
 
@@ -370,7 +401,7 @@ aplicacion.controller('filtrosCtrl',['$scope', '$routeParams', '$http','$sce','$
 
 
 aplicacion.controller('favoritosCtrl',['$scope','$location','$http','registroFavoritos','registroCantidadFavoritos', function($scope,$location,$http,registroFavoritos,registroCantidadFavoritos){
-  
+
   listar_favoritos();
 
   //listamos los pedidos

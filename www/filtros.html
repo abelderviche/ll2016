@@ -11,6 +11,14 @@
 </style>
 <div class="color_lilas_texto" style="margin-top:30px">
 	<div class="row center">
+		<!--<select class="filtroRaza" name="filtroRaza" style="display:block!important">
+			<option ng-repeat="raza in razas" value="{{raza.id}}">{{raza.nombre}}</option>
+		</select>-->
+		<select style="display:block!important" name="show-filter" ng-model="catFilter"
+		   ng-options="raza as raza.nombre for raza in razas">
+		</select>
+	</div>
+	<div class="row center">
 		<div class="s6 col" ng-click="activeRelevantes()">
 			<!-- <i class="material-icons large"  ng-class="{seleccionado:relevantes}">flag</i> -->
 			<img  class="iconin" ng-src="img/iconos/{{relevante_src}}.png">
@@ -26,7 +34,7 @@
 			<img class="iconin"  ng-src="img/iconos/{{src_preasc}}.png">
 			<h6>Mayor Precio</h6>
 		</div>
-	
+
 		<div class="s6 col" ng-click="order('precio',false)">
 			<!--<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_desc'}">attach_money</i>-->
 			<img class="iconin" ng-src="img/iconos/{{src_predesc}}.png">
@@ -61,7 +69,7 @@
 </div>
 
     <div class="row">
-    	<div class="col s6" ng-repeat="cat in catalogo | orderBy:predicate:reverse  | filter:colourFilter | filter:filters" style="height:240px;">
+    	<div class="col s6" ng-repeat="cat in catalogo | orderBy:predicate:reverse  | filter:colourFilter | filter:filters | filter:{nombre_raza_cat: catFilter.nombre}: true" style="height:240px;">
     		<a href="#/detalle/{{cat.id}}">
 	          <div class="card">
 	            <div class="card-image">

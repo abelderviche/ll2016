@@ -1,4 +1,4 @@
- var aplicacion = angular.module('App', ['ngRoute','ngAnimate']);
+ var aplicacion = angular.module('App', ['ngRoute','ngAnimate','ngCart']);
  aplicacion.config(function ($compileProvider){
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
     }).config(function ($routeProvider) {
@@ -34,7 +34,7 @@
           .when('/favoritos', {
               templateUrl : 'favoritos.html',
               controller  : 'favoritosCtrl'
-          });         
+          });
   });
 
 /*angular.module('App', [])

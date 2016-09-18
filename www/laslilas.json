@@ -75,7 +75,7 @@
 	,"ranking":0
 },{
 	"id": 4,
-	"nombre_toro":"Etiqueta verde",
+	"nombre_toro":"Etiqueta Verde",
 	"nombre_raza":"angus_negro",
 	"nombre_raza_cat":"Angus Negro",
 	"destacado":1,
@@ -386,7 +386,7 @@
 	"ce":"43 cm",
 	"peso":"900 kg",
 	"descripcion1":"Primer Premio y Campeón Dos Años Menor de Palermo 2013.",
-	"descripcion2":"Balanceada curva de crecimiento encontrándose en el 15% superior para peso al destete, peso final y circunferencia escrotal.", 
+	"descripcion2":"Balanceada curva de crecimiento encontrándose en el 15% superior para peso al destete, peso final y circunferencia escrotal.",
 	"descripcion3":"Padre de mucha calidad racial con típica cabeza Angus, portador de un tamaño intermedio, con muy buena conformación carnicera, impecable desplazamiento y sobresaliente estructura ósea."
 
 		,"ranking":0
@@ -836,7 +836,7 @@
 	"imagen_toro2":"img/ottawa-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"113",
- 
+
 	"fn":"19/04/13",
 	"hba":"X431163",
 	"senasa":"I-67 PH1656",
@@ -1248,10 +1248,10 @@
 	"imagen_toro2":"img/monterrey-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"88",
- 
+
     "avanzado":"5º Gen.",
 	"fn":"22/07/02",
-	"hba":"112822", 
+	"hba":"112822",
 	"senasa":"I-67BG458",
 	"adn":"N0097255",
 
@@ -1346,7 +1346,7 @@
 	"adn":"N144883",
 
 	"pan":"33,0 kg",
-	"pad":"234 kg / 107", 
+	"pad":"234 kg / 107",
 	"paf":"560 kg / 106",
 	"frame":"6,3",
 	"ce":"41 cm",
@@ -1376,7 +1376,7 @@
 	"adn":"198447",
 
 	"pan":"39,0 kg S/I",
-	"pad":"270 kg S/I", 
+	"pad":"270 kg S/I",
 	"paf":"S/I",
 	"frame":"5,6",
 	"ce":"40 cm",
@@ -1406,7 +1406,7 @@
 	"adn":"N127227",
 
 	"pan":"30,5 kg",
-	"pad":"244 kg / 108", 
+	"pad":"244 kg / 108",
 	"paf":"572 kg / 112",
 	"frame":"5,5",
 	"ce":"41 cm",
@@ -1436,7 +1436,7 @@
 	"tatuaje":"33P6",
 
 	"pan":"39,5 kg",
-	"pad":"335 kg / 117", 
+	"pad":"335 kg / 117",
 	"paf":"580 kg / 120",
 	"frame":"6,2",
 	"ce":"46 cm",
@@ -1466,7 +1466,7 @@
 	"tatuaje":"23A53",
 
 	"pan":"38 kg",
-	"pad":"372 kg", 
+	"pad":"372 kg",
 	"paf":"540 kg",
 	"frame":"5,5",
 	"ce":"41 cm",
@@ -1496,7 +1496,7 @@
 	"adn":"N0097298",
 
 	"pan":"38,3 kg S/I",
-	"pad":"347 kg / 135", 
+	"pad":"347 kg / 135",
 	"paf":"727 kg / 118",
 	"frame":"6,5",
 	"ce":"43 cm",
@@ -1525,7 +1525,7 @@
 	"adn":"N00932692",
 
 	"pan":"33,0 kg",
-	"pad":"230 kg / 107", 
+	"pad":"230 kg / 107",
 	"paf":"568 kg / 122",
 	"frame":"6,0",
 	"ce":"43 cm",
@@ -1555,7 +1555,7 @@
 	"adn":"N0193615",
 
 	"pan":"33,8 kg",
-	"pad":"145 kg / 84", 
+	"pad":"145 kg / 84",
 	"paf":"476 kg / 106",
 	"frame":"5,5",
 	"ce":"40 cm",
@@ -1585,7 +1585,7 @@
 	"adn":"N0102782",
 
 	"pan":"33,2 kg",
-	"pad":"215 kg / 103", 
+	"pad":"215 kg / 103",
 	"paf":"479 kg / 98",
 	"frame":"4,5",
 	"ce":"43 cm",
@@ -1614,7 +1614,7 @@
 	"adn":"N0243908",
 
 	"pan":"32 kg",
-	"pad":"283 kg", 
+	"pad":"283 kg",
 	"paf":"532 kg",
 	"frame":"6,0",
 	"ce":"42 cm",
@@ -1643,7 +1643,7 @@
 	"adn":"N226016",
 
 	"pan":"32 kg",
-	"pad":"196 kg", 
+	"pad":"196 kg",
 	"paf":"455 kg",
 	"frame":"5,5",
 	"ce":"40 cm",
@@ -1665,7 +1665,7 @@
 	"imagen_toro2":"img/liberado-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"94",
-    
+
     "definitivo":"6º GEN.",
 	"fn":"23/08/11",
 	"hba":"136497",
@@ -1673,7 +1673,7 @@
 	"adn":"N0188911",
 
 	"pan":"33,0 kg",
-	"pad":"261 kg / 123", 
+	"pad":"261 kg / 123",
 	"paf":"385 kg / 121",
 	"frame":"5,5",
 	"ce":"41 cm",
@@ -1695,7 +1695,7 @@
 	"imagen_toro2":"img/federacion-back.jpg",
 	"aptosvaquillonas":"",
 	"precio":"100",
-    
+
     "avanzado":"  ",
 	"fn":"27/03/12",
 	"hba":"141675",
@@ -1703,7 +1703,7 @@
 	"adn":"N0230571",
 
 	"pan":"32,8 kg",
-	"pad":"191 kg / 100", 
+	"pad":"191 kg / 100",
 	"paf":"511 kg / 100",
 	"frame":"5,6",
 	"ce":"40 cm",
@@ -1725,7 +1725,7 @@
 	"imagen_toro2":"img/rancagua-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"128",
-    
+
     "definitivo":"6º GEN.",
 	"fn":"18/09/09",
 	"hba":"128740",
@@ -1754,7 +1754,7 @@
 	"imagen_toro2":"img/democrata-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"132",
-    
+
     "definitivo":"6º GEN.",
 	"fn":"22/08/12",
 	"hba":"137374",
@@ -1762,7 +1762,7 @@
 	"adn":"N0207401",
 
 	"pan":"39,0 kg",
-	"pad":"231 kg / 98", 
+	"pad":"231 kg / 98",
 	"paf":"546 kg / 121",
 	"frame":"5,8",
 	"ce":"44 cm",
@@ -1784,7 +1784,7 @@
 	"imagen_toro2":"img/mauleon-back.jpg",
 	"aptosvaquillonas":"",
 	"precio":"78",
-    
+
     "avanzado":"4º GEN.",
 	"fn":"23/09/01",
 	"hba":"113074",
@@ -1792,7 +1792,7 @@
 	"adn":"N0097872",
 
 	"pan":"37,0 kg",
-	"pad":"231 kg / 109", 
+	"pad":"231 kg / 109",
 	"paf":"484 kg / 96",
 	"frame":"6,3",
 	"ce":"44 cm",
@@ -1814,7 +1814,7 @@
 	"imagen_toro2":"img/malambo-back.jpg",
 	"aptosvaquillonas":"",
 	"precio":"145",
-    
+
     "preparatorio":"2º GEN.",
 	"fn":"18/09/10",
 	"hba":"133557",
@@ -1822,7 +1822,7 @@
 	"adn":"N0203300",
 
 	"pan":"42,0 kg",
-	"pad":"268 kg / 118", 
+	"pad":"268 kg / 118",
 	"paf":"582 kg / 122",
 	"frame":"6,1",
 	"ce":"44 cm",
@@ -1844,7 +1844,7 @@
 	"imagen_toro2":"img/bigtime-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"270",
-    
+
     "definitivo":"3º GEN.",
 	"fn":"29/10/04",
 	"semen" :"IMPORTADO",
@@ -1852,7 +1852,7 @@
 	"tatuaje":"10T6",
 
 	"pan":"38,6 kg",
-	"pad":"311 kg / 101", 
+	"pad":"311 kg / 101",
 	"paf":"467 kg / 100",
 	"frame":"6,3",
 	"ce":"41 cm",
@@ -1874,7 +1874,7 @@
 	"imagen_toro2":"img/dinasty-back.jpg",
 	"aptosvaquillonas":"",
 	"precio":0,
-    
+
     "definitivo":"3º GEN.",
 	"fn":"29/10/04",
 	"semen": "IMPORTADO",
@@ -1882,7 +1882,7 @@
 	"tatuaje":"198/A",
 
 	"pan":"35 kg",
-	"pad":"251 kg", 
+	"pad":"251 kg",
 	"paf":"456 kg",
 	"frame":"6,0",
 	"ce":"42 cm",
@@ -1904,7 +1904,7 @@
 	"imagen_toro2":"img/liberal-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"130",
-    
+
     "definitivo":"6º GEN.",
 	"fn":"08/10/07",
 	"hba":"122947",
@@ -1912,7 +1912,7 @@
 	"adn":"N127226",
 
 	"pan":"35,1 kg",
-	"pad":"233 kg / 104", 
+	"pad":"233 kg / 104",
 	"paf":"582 kg / 114",
 	"frame":"5,6",
 	"ce":"42 cm",
@@ -1934,7 +1934,7 @@
 	"imagen_toro2":"img/mackanudo-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"93",
-    
+
     "avanzado":"3º GEN.",
 	"fn":"09/02/06",
 	"hba":"103154",
@@ -1942,7 +1942,7 @@
 	"adn":"N0123825",
 
 	"pan":"30,3 kg",
-	"pad":"225 kg / 120", 
+	"pad":"225 kg / 120",
 	"paf":"432 kg / 94",
 	"frame":"5,5",
 	"ce":"42 cm",
@@ -1964,7 +1964,7 @@
 	"imagen_toro2":"img/granate-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"120",
-    
+
     "definitivo":"5º GEN.",
 	"fn":"15/09/08",
 	"hba":"103588",
@@ -1972,7 +1972,7 @@
 	"adn":"N129482",
 
 	"pan":"38,0 kg",
-	"pad":"266 kg / 99", 
+	"pad":"266 kg / 99",
 	"paf":"542 kg / 124",
 	"frame":"5,2",
 	"ce":"42 cm",
@@ -1994,7 +1994,7 @@
 	"imagen_toro2":"img/capitan-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"128",
-    
+
     "definitivo":"5º GEN.",
 	"fn":"27/06/06",
 	"hba":"103070",
@@ -2002,7 +2002,7 @@
 	"adn":"N128678",
 
 	"pan":"34,1 kg",
-	"pad":"208 kg / 100", 
+	"pad":"208 kg / 100",
 	"paf":"479 kg / 100",
 	"frame":"4,7",
 	"ce":"43 cm",
@@ -2024,7 +2024,7 @@
 	"imagen_toro2":"img/diego-back.jpg",
 	"aptosvaquillonas":"",
 	"precio":"113",
-    
+
     "registrado":"REGISTRADO",
 	"fn":"20/09/12",
 	"hba":"104768",
@@ -2032,7 +2032,7 @@
 	"adn":"N0207418",
 
 	"pan":"37 kg",
-	"pad":"303 kg", 
+	"pad":"303 kg",
 	"paf":"502 kg",
 	"frame":"6,0",
 	"ce":"40 cm",
@@ -2055,7 +2055,7 @@
 	"imagen_toro2":"img/ibera-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"136",
-    
+
     "avanzado":"4º GEN.",
 	"fn":"03/06/11",
 	"aba":"2092351",
@@ -2063,7 +2063,7 @@
 	"adn":"N0221944",
 
 	"pan":"32,0 kg",
-	"pad":"228 kg / 100", 
+	"pad":"228 kg / 100",
 	"paf":"525 kg / 100",
 	"frame":"5,3",
 	"ce":"41 cm",
@@ -2085,7 +2085,7 @@
 	"imagen_toro2":"img/puertotirol-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"126",
-    
+
     "avanzado":"4º GEN.",
 	"fn":"05/09/03",
 	"hba":"102072",
@@ -2093,7 +2093,7 @@
 	"adn":"N0123200",
 
 	"pan":"30,0 kg",
-	"pad":"222 kg / 106", 
+	"pad":"222 kg / 106",
 	"paf":"524 kg / 103",
 	"frame":"4,5",
 	"ce":"43 cm",
@@ -2115,7 +2115,7 @@
 	"imagen_toro2":"img/duende-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"110",
-    
+
     "avanzado":"4º GEN.",
 	"fn":"08/04/02",
 	"hba":"101959",
@@ -2123,7 +2123,7 @@
 	"adn":"N0097257",
 
 	"pan":"33,5 kg",
-	"pad":"236 kg / 112", 
+	"pad":"236 kg / 112",
 	"paf":"550 kg / 109",
 	"frame":"5,8",
 	"ce":"43 cm",
@@ -2145,7 +2145,7 @@
 	"imagen_toro2":"img/soypragmatico-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"115",
-    
+
     "avanzado":"  ",
 	"fn":"21/08/12",
 	"hba":"141575",
@@ -2153,7 +2153,7 @@
 	"adn":"E/T",
 
 	"pan":"33,0 kg",
-	"pad":"251 kg / 109", 
+	"pad":"251 kg / 109",
 	"paf":"521 kg / 109",
 	"frame":"5,8",
 	"ce":"40 cm",
@@ -2175,7 +2175,7 @@
 	"imagen_toro2":"img/sargento-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"82",
-    
+
     "controlado":"3º GEN.",
 	"fn":"12/07/11",
 	"hba":"2212226",
@@ -2183,7 +2183,7 @@
 	"adn":"E/T",
 
 	"pan":"35,0 kg",
-	"pad":"255 kg / 100", 
+	"pad":"255 kg / 100",
 	"paf":"560 kg / 100",
 	"frame":"5,7",
 	"ce":"42 cm",
@@ -2205,7 +2205,7 @@
 	"imagen_toro2":"img/diamante-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"117",
-    
+
     "definitivo":"4º GEN.",
 	"fn":"11/02/08",
 	"hba":"103457",
@@ -2213,7 +2213,7 @@
 	"adn":"N127201",
 
 	"pan":"34,0 kg",
-	"pad":"206 kg / 101", 
+	"pad":"206 kg / 101",
 	"paf":"475 kg / 97",
 	"frame":"5,6",
 	"ce":"42 cm",
@@ -2235,7 +2235,7 @@
 	"imagen_toro2":"img/soypampa-back.jpg",
 	"aptosvaquillonas":"",
 	"precio":"140",
-    
+
     "preparatorio":"2º GEN.",
 	"fn":"22/07/09",
 	"hba":"P1983857",
@@ -2243,7 +2243,7 @@
 	"adn":"E/T",
 
 	"pan":"35,7 kg",
-	"pad":"216 kg / 99", 
+	"pad":"216 kg / 99",
 	"paf":"561 kg / 97",
 	"frame":"6,2",
 	"ce":"44 cm",
@@ -2265,7 +2265,7 @@
 	"imagen_toro2":"img/hercules-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"145",
-    
+
     "definitivo":"5º GEN.",
 	"fn":"25/08/10",
 	"hba":"104062",
@@ -2273,7 +2273,7 @@
 	"adn":"N159815",
 
 	"pan":"38,0 kg",
-	"pad":"259 kg / 100", 
+	"pad":"259 kg / 100",
 	"paf":"514 kg / 100",
 	"frame":"5,3",
 	"ce":"44 cm",
@@ -2295,7 +2295,7 @@
 	"imagen_toro2":"img/correntino-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"102",
-    
+
     "controlado":"3º GEN.",
 	"fn":"14/09/00",
 	"aba":"C25016",
@@ -2303,7 +2303,7 @@
 	"adn":"N0097241",
 
 	"pan":"32,0 kg",
-	"pad":"220 kg / 105", 
+	"pad":"220 kg / 105",
 	"paf":"540 kg / 107",
 	"frame":"5,3",
 	"ce":"42 cm",
@@ -2325,7 +2325,7 @@
 	"imagen_toro2":"img/cienxcien-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"80",
-    
+
     "controlado":"3º GEN.",
 	"fn":"26/10/04",
 	"hba":"C82571",
@@ -2333,7 +2333,7 @@
 	"adn":"N0123198",
 
 	"pan":"S/I",
-	"pad":"204 kg / 114", 
+	"pad":"204 kg / 114",
 	"paf":"473 kg / 96",
 	"frame":"5,1",
 	"ce":"40 cm",
@@ -2355,7 +2355,7 @@
 	"imagen_toro2":"img/garua-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":0,
-    
+
     "definitivo":"5º GEN.",
 	"fn":"04/02/09",
 	"hba":"103493",
@@ -2363,7 +2363,7 @@
 	"adn":"N139832",
 
 	"pan":"34,5 kg",
-	"pad":"249 kg / 132", 
+	"pad":"249 kg / 132",
 	"paf":"521 kg / 107",
 	"frame":"5,5",
 	"ce":"41 cm",
@@ -2385,14 +2385,14 @@
 	"imagen_toro2":"img/formosa-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"90",
-    
+
 	"fn":"31/08/11",
 	"hba":"21641",
 	"senasa":"I-67B317",
 	"adn":"N0191947",
 
 	"pan":"34,0 kg",
-	"pad":"219 kg / 101", 
+	"pad":"219 kg / 101",
 	"paf":"401 kg / 108",
 	"frame":"5,5",
 	"ce":"40 cm",
@@ -2414,14 +2414,14 @@
 	"imagen_toro2":"img/campowinter-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"100",
-    
+
 	"fn":"30/09/13",
 	"hba":"21900",
 	"senasa":"E/T",
 	"adn":"N0211953",
 
 	"pan":"33,1 kg",
-	"pad":"256,1 kg", 
+	"pad":"256,1 kg",
 	"paf":"592,5 kg",
 	"frame":"5,4",
 	"ce":"46 cm",
@@ -2443,14 +2443,14 @@
 	"imagen_toro2":"img/soybueno-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"130",
-    
+
 	"fn":"20/08/98",
 	"hba":"19132",
 	"senasa":"I-83B252",
 	"adn":"N0097867",
 
 	"pan":"34,0 kg",
-	"pad":"243 kg / 101", 
+	"pad":"243 kg / 101",
 	"paf":"567 kg / 97",
 	"frame":"6,0",
 	"ce":"44 cm",
@@ -2472,14 +2472,14 @@
 	"imagen_toro2":"img/soymejor-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"113",
-    
+
 	"fn":"19/02/04",
 	"hba":"19863",
 	"senasa":"I-67B288",
 	"adn":"N0117896",
 
 	"pan":"32,0 kg",
-	"pad":"199 kg / 91", 
+	"pad":"199 kg / 91",
 	"paf":"402 kg / 96",
 	"frame":"5,5",
 	"ce":"41 cm",
@@ -2501,14 +2501,14 @@
 	"imagen_toro2":"img/holding-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"83",
-    
+
 	"fn":"01/09/07",
 	"hba":"20825",
 	"senasa":"I-67B295",
 	"adn":"N0129447",
 
 	"pan":"30,0 kg",
-	"pad":"255 kg / 101", 
+	"pad":"255 kg / 101",
 	"paf":"542 kg / 102",
 	"frame":"5,6",
 	"ce":"43 cm",
@@ -2530,14 +2530,14 @@
 	"imagen_toro2":"img/supremo-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"102",
-    
+
 	"fn":"15/02/03",
 	"hba":"19604",
 	"senasa":"I-67B282",
 	"adn":"N0097864",
 
 	"pan":"35,0 kg",
-	"pad":"224 kg / 106", 
+	"pad":"224 kg / 106",
 	"paf":"552 kg / 106",
 	"frame":"5,8",
 	"ce":"41 cm",
@@ -2559,14 +2559,14 @@
 	"imagen_toro2":"img/tacuari-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"94",
-    
+
 	"fn":"24/08/93",
 	"hba":"18604",
 	"senasa":"I-67B221",
 	"adn":"N0097243",
 
 	"pan":"38,9 kg",
-	"pad":"246 kg / 116", 
+	"pad":"246 kg / 116",
 	"paf":"504 kg / 103",
 	"frame":"6,2",
 	"ce":"40 cm",
@@ -2588,14 +2588,14 @@
 	"imagen_toro2":"img/houston-back.jpg",
 	"aptosvaquillonas":"",
 	"precio":"165",
-    
+
 	"fn":"01/02/97",
 	"hba":"18721",
 	"senasa":"I-67B228",
 	"adn":"N0090406",
 
 	"pan":"35,4 kg",
-	"pad":"254 kg / 106", 
+	"pad":"254 kg / 106",
 	"paf":"587 kg / 103",
 	"frame":"6,0",
 	"ce":"44 cm",
@@ -2617,14 +2617,14 @@
 	"imagen_toro2":"img/master-back.jpg",
 	"aptosvaquillonas":"18_meses",
 	"precio":"96",
-    
+
 	"fn":"28/10/08",
 	"hba":"21019",
 	"senasa":"I-67B296",
 	"adn":"N136915",
 
 	"pan":"32,3 kg",
-	"pad":"282 kg / 108", 
+	"pad":"282 kg / 108",
 	"paf":"309 kg / 109",
 	"frame":"6,2",
 	"ce":"42 cm",
@@ -2652,7 +2652,7 @@
 	"fn":"01/11/2014",
 	"hba":"21019",
 	"pan":"30 kg",
-	"pad":"262 kg", 
+	"pad":"262 kg",
 	"paf":"496 kg",
 	"frame":"6",
 	"ce":"40 cm",

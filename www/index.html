@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="css/materialize.min.css" />
         <link rel="stylesheet" href="css/index.css" />
         <title>Las Lilas</title>
-   
+
     </head>
 
     <style type="text/css">
@@ -43,7 +43,7 @@
     nav .brand-logo {
       font-size: 17px !important;
     }
- 
+
   .ng-view {
     display: flex;
     min-height: 90vh;
@@ -53,7 +53,7 @@
   main {
     flex: 1 0 auto;
   }
-      
+
        /* label color */
    .input-field label {
      color: #000;
@@ -83,11 +83,11 @@
    }
      .nav-wrapper li > a > span, .nav-wrapper li > span{
         margin: 12px;
-     }  
+     }
      .nav-wrapper li > a > img, .nav-wrapper li > img{
         height: 28px;
         margin: -5px;
-     }   
+     }
      .nav-wrapper li > a{
       font-size: 14px;
      }
@@ -103,23 +103,25 @@
           <a href="#/" class="brand-logo color_lilas_texto">CABA&Ntilde;A LAS LILAS</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse color_lilas_texto right datos_form"><i class="material-icons">menu</i></a>
           <a href="#/" class="color_lilas_texto left "><i class="material-icons" style="font-size:4rem!important">chevron_left</i></a>
-          <ul class="right hide-on-med-and-down"> </ul> 
+          <ul class="right hide-on-med-and-down"> </ul>
           <ul class="side-nav" id="mobile-demo" style="margin-top:56px;">
             <!-- <li style="text-align:right;" class="color_lilas_texto datos_form" id="form_name">Patricio Arango</li> -->
             <li style="text-align:right;" class="color_lilas_texto datos_form"><span id="form_name" >Patricio Arango</span><img src="img/iconos/user.svg"></li>
             <div class="divider"></div>
-            
+
             <li style="text-align:right;"><a href="#/buscador"><span>BUSCAR</span><img src="img/iconos/lupa.svg"></a></li>
             <div class="divider"></div>
-            
+
             <li style="text-align:right;"><a href="#/filtros"><span>FILTROS</span><img src="img/iconos/filtros.svg"></a></li>
             <div class="divider"></div>
-            
+
             <li style="text-align:right;"><a href="#/"><span>CAT&Aacute;LOGO</span><img src="img/iconos/toros.svg"></a></li>
             <div class="divider"></div>
-            
+
             <li style="text-align:right;" ng-repeat="venta in ventasActuales | limitTo:1"><a href="#/carrito"><span class="teal white-text cantidad" id="cant_favoritos"style="font-size: 108%">{{venta}}</span><span>CARRITO</span><img src="img/iconos/carrito.svg"></a></li>
             <div class="divider"></div>
+
+            <ngcart-summary></ngcart-summary>
             
             <li style="text-align:right;" ng-repeat="favorito in favoritosActuales | limitTo:1"><a href="#/favoritos"><span class="teal white-text cantidad" id="cant_favoritos"style="font-size: 108%">{{favorito}}</span><span>FAVORITOS</span><img src="img/iconos/estrella.svg"></a></li>
             <div class="divider"></div>
@@ -137,6 +139,7 @@
 
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/angular/angular.js"></script>
+  <script type="text/javascript" src="js/ngcart.js"></script>
   <script type="text/javascript" src="js/angular/angular-mocks.js"></script>
   <script type="text/javascript" src="js/angular/angular-route.js"></script>
   <script type="text/javascript" src="js/angular/angular-animate.js"></script>
@@ -156,7 +159,7 @@
       // datos formulario
       if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
           $(".datos_form").hide();
-      } else {  
+      } else {
           $(".datos_form").show();
           $("#form_name").text(localStorage.getItem("rc2016_nombre"));
           $("#form_email").text(localStorage.getItem("rc2016_email"));
@@ -175,6 +178,8 @@
 
   <script type="text/javascript">
      app.initialize();
+     console.log('test')
  </script>
+
     </body>
 </html>
