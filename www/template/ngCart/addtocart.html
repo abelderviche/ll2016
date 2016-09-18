@@ -21,10 +21,10 @@
   <div class="col s6 color_lilas_texto">
     <div class="col s12">
       <!--
-      <input type="number" style="font-size:2rem;" ng-init="count=1" ng-model="count" value="" ng-keypress="cant_dosis('same',count)" ng-required>
-    -->
       <select style="display:block!important" name="quantity" id="quantity" ng-model="q"
-              ng-options=" v for v in qtyOpt"></select>
+      ng-options=" v for v in qtyOpt"></select>
+    -->
+    <input type="number" style="font-size:2rem;" ng-init="q=1" ng-model="q" value="" ng-required>
     </div>
     <div class="col s12">
       <span style="font-size:1.1rem;">Precio U.: ${{price}}</span>

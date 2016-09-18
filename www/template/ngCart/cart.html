@@ -22,19 +22,33 @@
         </tr>
         </thead>
         <tfoot>
-        <tr ng-show="ngCart.getTax()">
+        <tr >
             <td></td>
             <td></td>
             <td></td>
-            <td>Tax ({{ ngCart.getTaxRate() }}%):</td>
-            <td>{{ ngCart.getTax() | currency }}</td>
+            <td>Subtotal:</td>
+            <td>{{ ngCart.getSubTotal() | currency }}</td>
+        </tr>
+        <tr ng-show="ngCart.getNitrogen()">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Nitrogeno:</td>
+            <td>{{ ngCart.getNitrogen() | currency }}</td>
         </tr>
         <tr ng-show="ngCart.getShipping()">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Shipping:</td>
-            <td>{{ ngCart.getShipping() | currency }}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Envio:</td>
+          <td>{{ ngCart.getShipping() | currency }}</td>
+        </tr>
+        <tr ng-show="ngCart.getTax()">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>IVA ({{ ngCart.getTaxRate() }}%):</td>
+          <td>{{ ngCart.getTax() | currency }}</td>
         </tr>
         <tr>
             <td></td>
@@ -50,11 +64,7 @@
 
             <td>{{ item.getName() }}</td>
             <td>
-
-              <span class="glyphicon glyphicon-minus" ng-class="{'disabled':item.getQuantity()==1}"
-                      ng-click="item.setQuantity(-1, true)"><i class="material-icons">expand_more</i></span>&nbsp;&nbsp;
-                {{ item.getQuantity() | number }}&nbsp;&nbsp;
-                <span class="glyphicon glyphicon-plus" ng-click="item.setQuantity(1, true)"><i class="material-icons">expand_less</i></span>
+                {{ item.getQuantity() | number }}
             </td>
             <td>{{ item.getPrice() | currency}}</td>
             <td>{{ item.getTotal() | currency }}</td>

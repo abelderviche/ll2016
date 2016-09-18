@@ -148,21 +148,35 @@ aplicacion.factory('registroFavoritos',function(){
 aplicacion.controller('carritoCtrl',['$scope','$location','$http','registroVentas','registroCantidadVentas','ngCart', function($scope,$location,$http,registroVentas,registroCantidadVentas,ngCart){
 
 //localStorage.removeItem("laslilas_nro_ventas");
-//localStorage.removeItem("laslilas_listado_ventas");
+//localStorage.removeItem("laslilas_listado_ventas"); %0D%0A
+ngCart.setTaxRate(21.0);
+ngCart.setShipping(400.00);
+ngCart.setNitrogen(350.00);
 
 function getBody(){
-  var bodyText= "<table>";
-  bodyText += "<tr>test</tr>";
-  bodyText += "<tr>"+ngCart.getTotalItems()+"</tr>";
-  return bodyText;
+  var body;
+  var bodyCart = "Nombre\t\t\t\tCantidad\t\t\t\tPrecio\t\t\t\tTotal\n";
+
+  for (item of ngCart.getCart().items) {
+    if(item._name.length <= 7){var separacion = "\t\t\t\t\t"}else{var separacion = "\t\t\t\t"}
+    bodyCart+= item._name + separacion + item._quantity + "\t\t\t\t$" + item._price + "\t\t\t\t$"+(item._price*item._quantity)+"\n";
+  }
+  bodyCart += "Subtotal:\t\t\t$"+ngCart.getSubTotal()+"\n";
+  bodyCart += "Nitrogeno:\t\t$"+ngCart.getNitrogen()+"\n";
+  bodyCart += "Envio:\t\t\t$"+ngCart.getShipping()+"\n";
+  bodyCart += "IVA("+ ngCart.getTaxRate()+ "%):\t\t$"+ngCart.getTax()+"\n";
+  bodyCart += "TOTAL:\t\t\t$"+ngCart.totalCost()+"\n";
+  console.log(bodyCart);
+  body = bodyCart
+  return body;
 }
 
   $scope.mail = function(){
     var link = "mailto:laslilas@gmail.com?subject=Nueva Compra&body=";
     link += encodeURIComponent(getBody());
-    console.log(link)
-    //window.location.href = link;
-    ngCart.empty();
+  //  console.log(link)
+    window.location.href = link;
+    //ngCart.empty();
   }
 
   $scope.vaciar = function(){

@@ -34,6 +34,7 @@ angular.module('ngCart', ['ngCart.directives'])
                 shipping : null,
                 taxRate : null,
                 tax : null,
+                nitrogen:null,
                 items : []
             };
         };
@@ -64,6 +65,16 @@ angular.module('ngCart', ['ngCart.directives'])
                 }
             });
             return build;
+        };
+
+        this.setNitrogen = function(nitrogen){
+            this.$cart.nitrogen = nitrogen;
+            return this.getNitrogen();
+        };
+
+        this.getNitrogen = function(){
+            if (this.getCart().items.length == 0) return 0;
+            return  this.getCart().nitrogen;
         };
 
         this.setShipping = function(shipping){
@@ -124,7 +135,7 @@ angular.module('ngCart', ['ngCart.directives'])
         };
 
         this.totalCost = function () {
-            return +parseFloat(this.getSubTotal() + this.getShipping() + this.getTax()).toFixed(2);
+            return +parseFloat(this.getSubTotal() + this.getShipping()+ this.getNitrogen() + this.getTax()).toFixed(2);
         };
 
         this.removeItem = function (index) {
