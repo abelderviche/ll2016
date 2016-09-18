@@ -36,7 +36,10 @@
       <a ng-hide="botones_venta" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">check</i></a>
   -->
       <div class="col s6">
-        <a ng-click="ngCart.addItem(id, name, price, q, data)" ng-transclude class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank" ><i class="material-icons">shopping_cart</i></a>
+        <a ng-click="ngCart.addItem(id, name, price, q, data)" ng-transclude class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank" >
+          <i class="material-icons" ng-hide="inCart()">shopping_cart</i>
+          <i class="material-icons" ng-show="inCart()">add</i>
+        </a>
       </div>
       <div class="col s6" ng-show="inCart()">
             Ya se encuentra en el carrito. <a ng-click="ngCart.removeItemById(id)" style="cursor: pointer;">Eliminar</a>

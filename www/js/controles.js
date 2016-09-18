@@ -154,9 +154,22 @@ ngCart.setShipping(400.00);
 ngCart.setNitrogen(350.00);
 
 function getBody(){
-  var body;
-  var bodyCart = "Nombre\t\t\t\tCantidad\t\t\t\tPrecio\t\t\t\tTotal\n";
+  var body ="";
+  var bodyUser ="";
 
+  var user = JSON.parse(localStorage.getItem('LLUsers'));
+  bodyUser +="Nombre y Apellido: "+user.name +"\n";
+  bodyUser +="Tel.: "+user.tel +"\n";
+  bodyUser +="Direccion: "+user.address +"\n";
+  bodyUser +="Ciudad: "+user.city +"\n";
+  bodyUser +="Provincia: "+user.city +"\n";
+  bodyUser +="Cod. Postal: "+user.cp +"\n";
+  bodyUser +="CUIT: "+user.cuit +"\n";
+  bodyUser +="Razon Social: "+user.social +"\n";
+
+
+
+  var bodyCart = "Nombre\t\t\t\tCantidad\t\t\t\tPrecio\t\t\t\tTotal\n";
   for (item of ngCart.getCart().items) {
     if(item._name.length <= 7){var separacion = "\t\t\t\t\t"}else{var separacion = "\t\t\t\t"}
     bodyCart+= item._name + separacion + item._quantity + "\t\t\t\t$" + item._price + "\t\t\t\t$"+(item._price*item._quantity)+"\n";
@@ -166,8 +179,13 @@ function getBody(){
   bodyCart += "Envio:\t\t\t$"+ngCart.getShipping()+"\n";
   bodyCart += "IVA("+ ngCart.getTaxRate()+ "%):\t\t$"+ngCart.getTax()+"\n";
   bodyCart += "TOTAL:\t\t\t$"+ngCart.totalCost()+"\n";
-  console.log(bodyCart);
-  body = bodyCart
+
+  body = "Datos de comprador\n";
+  body+="--------------------------\n";
+  body += bodyUser;
+  body += "\n\nDatos de carrito\n";
+  body+="--------------------------\n";
+  body += bodyCart;
   return body;
 }
 
@@ -176,7 +194,8 @@ function getBody(){
     link += encodeURIComponent(getBody());
   //  console.log(link)
     window.location.href = link;
-    //ngCart.empty();
+    ngCart.empty();
+    window.location = "#/";
   }
 
   $scope.vaciar = function(){
@@ -233,14 +252,39 @@ aplicacion.controller('catalogoCtrl',['$scope','$location','$http', function($sc
      //localStorage.setItem("rc2016_email","");
     if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
       $scope.loginview = true;
+      //var user = {};
+    //  localStorage.setItem('LLUsers',JSON.stringify(user));
     } else {
       $scope.loginview = false;
     }
-
+    /*
+        $scope.user.name='test';
+        $scope.user.tel='123123123';
+        $scope.user.address='direccintest';
+        $scope.user.city='ciudadtest';
+        $scope.user.state='provtest';
+        $scope.user.cp='123123';
+        $scope.user.cuit='123123123123';
+        $scope.user.social='razonTest';
+*/
     $scope.submitForm = function() {
+    //  var oldUsers = JSON.parse(localStorage.getItem('LLUsers')) || [];
       localStorage.setItem("rc2016_firstime","1");
-      localStorage.setItem("rc2016_nombre",$scope.user.name);
-      localStorage.setItem("rc2016_email",$scope.user.email);
+      var user = {
+        name:$scope.user.name,
+        tel:$scope.user.tel,
+        address:$scope.user.address,
+        city:$scope.user.city,
+        state:$scope.user.state,
+        cp:$scope.user.cp,
+        cuit:$scope.user.cuit,
+        social:$scope.user.social,
+      }
+      //oldUsers.push(user);
+      localStorage.setItem('LLUsers', JSON.stringify(user));
+    //  console.log(JSON.parse(localStorage.getItem('LLUsers')));
+    //  localStorage.setItem("rc2016_nombre",$scope.user.name);
+  //    localStorage.setItem("rc2016_email",$scope.user.email);
       window.location.reload();
     };
 
@@ -259,6 +303,25 @@ aplicacion.controller('subcatalogoCtrl',['$scope', '$routeParams', '$http','$sce
         $scope.catalogo = data;
       });
   }]);
+  aplicacion.controller('userCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope',
+      function($scope, $routeParams, $http,$sce,$rootScope) {
+        var user = JSON.parse(localStorage.getItem('LLUsers'));
+        $scope.user = user;
+        $scope.submitForm = function() {
+          var user = {
+            name:$scope.user.name,
+            tel:$scope.user.tel,
+            address:$scope.user.address,
+            city:$scope.user.city,
+            state:$scope.user.state,
+            cp:$scope.user.cp,
+            cuit:$scope.user.cuit,
+            social:$scope.user.social,
+          }
+          localStorage.setItem('LLUsers', JSON.stringify(user));
+          window.location = "#/";
+        };
+    }]);
 aplicacion.controller('destacadosCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope',
     function($scope, $routeParams, $http,$sce,$rootScope) {
       $scope.filters = { };
