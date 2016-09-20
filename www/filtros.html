@@ -9,36 +9,40 @@
 		width: 75px;
 	}
 </style>
-<div class="color_lilas_texto" style="margin-top:30px">
+<div class="color_lilas_texto" style="margin-top:15px">
 	<div class="row ">
 		<!--<select class="filtroRaza" name="filtroRaza" style="display:block!important">
 			<option ng-repeat="raza in razas" value="{{raza.id}}">{{raza.nombre}}</option>
 		</select>-->
-		<div class="col s12">
-			<h6>Raza:</h6>
-			<select style="display:block!important" name="show-filter" ng-model="catFilter"
+		<div class="col s2 valign-wrapper">
+		  <h5 class="valign" style="font-size:20px!important;">Raza:</h5>
+		</div>
+
+		<div class="col s10">
+			<select id="razaSelect" style="display:block!important;" name="show-filter" ng-model="catFilter"
 			   ng-options="raza as raza.nombre for raza in razas">
+				 <option value="">Todas</option>
 			</select>
 		</div>
 	</div>
 	<div class="row center">
-		<div class="s6 col" ng-click="activeRelevantes()">
+		<div class="s3 col" ng-click="activeRelevantes()">
 			<!-- <i class="material-icons large"  ng-class="{seleccionado:relevantes}">flag</i> -->
 			<img  class="iconin" ng-src="img/iconos/{{relevante_src}}.png">
 			<h6 >M&aacute;s Relevante</h6>
 		</div>
-		<div class="s6 col" ng-click="activeRanking()">
+		<div class="s3 col" ng-click="activeRanking()">
 			<!--<i class="material-icons large">poll</i>-->
 			<img class="iconin" src="img/iconos/{{src_ranking}}.png">
 			<h6>Ranking</h6>
 		</div>
-		<div class="s6 col test" ng-click="order('precio',true)">
+		<div class="s3 col test" ng-click="order('precio',true)">
 			<!--<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_asc'}">attach_money</i> -->
 			<img class="iconin"  ng-src="img/iconos/{{src_preasc}}.png">
 			<h6>Mayor Precio</h6>
 		</div>
 
-		<div class="s6 col" ng-click="order('precio',false)">
+		<div class="s3 col" ng-click="order('precio',false)">
 			<!--<i class="material-icons large"  ng-class="{seleccionado:seleccionado=='prec_desc'}">attach_money</i>-->
 			<img class="iconin" ng-src="img/iconos/{{src_predesc}}.png">
 			<h6>Menor Precio</h6>
