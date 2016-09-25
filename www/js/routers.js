@@ -15,6 +15,10 @@
               templateUrl : 'subcatalogo.html',
               controller  : 'destacadosCtrl'
           })
+          .when('/miscompras', {
+                templateUrl : 'miscompras.html',
+                controller  : 'miscomprasCtrl'
+            })
         .when('/usuario', {
                 templateUrl : 'usuario.html',
                 controller  : 'userCtrl'

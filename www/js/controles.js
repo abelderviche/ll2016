@@ -145,59 +145,75 @@ aplicacion.factory('registroFavoritos',function(){
   return itemsService;
 });
 
-aplicacion.controller('carritoCtrl',['$scope','$location','$http','registroVentas','registroCantidadVentas','ngCart', function($scope,$location,$http,registroVentas,registroCantidadVentas,ngCart){
+aplicacion.factory('misComprasFactory',function(){
+  var compras = JSON.parse(localStorage.getItem('LLCompras')) || [];
+  var comprasService = {};
+  comprasService.add = function(carrito,totalCost) {
+    carrito.fecha = new Date();
+    carrito.totalCost = totalCost;
+    compras.push(carrito);
+    localStorage.setItem('LLCompras', JSON.stringify(compras));
+  };
+  comprasService.delete = function(key) {
+    delete compras[key];
+    localStorage.setItem("LLCompras",JSON.stringify(compras));
+  };
+  comprasService.list = function() {
+    var compras = JSON.parse(localStorage.getItem('LLCompras'));
+    return compras;
+  };
+  return comprasService;
+});
 
-//localStorage.removeItem("laslilas_nro_ventas");
-//localStorage.removeItem("laslilas_listado_ventas"); %0D%0A
-ngCart.setTaxRate(21.0);
-ngCart.setShipping(400.00);
-ngCart.setNitrogen(350.00);
+aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFactory','registroVentas','registroCantidadVentas','ngCart', function($scope,$location,$http,misComprasFactory,registroVentas,registroCantidadVentas,ngCart){
+  ngCart.setTaxRate(21.0);
+  ngCart.setShipping(400.00);
+  ngCart.setNitrogen(350.00);
 
-function getBody(){
-  var body ="";
-  var bodyUser ="";
+  function getBody(){
+    var body ="";
+    var bodyUser ="";
+    var user = JSON.parse(localStorage.getItem('LLUsers'));
+    bodyUser +="Nombre y Apellido: "+user.name +"\n";
+    bodyUser +="Tel.: "+user.tel +"\n";
+    bodyUser +="Direccion: "+user.address +"\n";
+    bodyUser +="Ciudad: "+user.city +"\n";
+    bodyUser +="Provincia: "+user.city +"\n";
+    bodyUser +="Cod. Postal: "+user.cp +"\n";
+    bodyUser +="CUIT: "+user.cuit +"\n";
+    bodyUser +="Razon Social: "+user.social +"\n";
+    var bodyCart = "Nombre\t\t\t\tCantidad\t\t\t\tPrecio\t\t\t\tTotal\n";
+    for (item of ngCart.getCart().items) {
+      if(item._name.length <= 7){var separacion = "\t\t\t\t\t"}else{var separacion = "\t\t\t\t"}
+      bodyCart+= item._name + separacion + item._quantity + "\t\t\t\t$" + item._price + "\t\t\t\t$"+(item._price*item._quantity)+"\n";
+    }
+    bodyCart += "Subtotal:\t\t\t$"+ngCart.getSubTotal()+"\n";
+    bodyCart += "Nitrogeno:\t\t$"+ngCart.getNitrogen()+"\n";
+    bodyCart += "Envio:\t\t\t$"+ngCart.getShipping()+"\n";
+    bodyCart += "IVA("+ ngCart.getTaxRate()+ "%):\t\t$"+ngCart.getTax()+"\n";
+    bodyCart += "TOTAL:\t\t\t$"+ngCart.totalCost()+"\n";
 
-  var user = JSON.parse(localStorage.getItem('LLUsers'));
-  bodyUser +="Nombre y Apellido: "+user.name +"\n";
-  bodyUser +="Tel.: "+user.tel +"\n";
-  bodyUser +="Direccion: "+user.address +"\n";
-  bodyUser +="Ciudad: "+user.city +"\n";
-  bodyUser +="Provincia: "+user.city +"\n";
-  bodyUser +="Cod. Postal: "+user.cp +"\n";
-  bodyUser +="CUIT: "+user.cuit +"\n";
-  bodyUser +="Razon Social: "+user.social +"\n";
-
-
-
-  var bodyCart = "Nombre\t\t\t\tCantidad\t\t\t\tPrecio\t\t\t\tTotal\n";
-  for (item of ngCart.getCart().items) {
-    if(item._name.length <= 7){var separacion = "\t\t\t\t\t"}else{var separacion = "\t\t\t\t"}
-    bodyCart+= item._name + separacion + item._quantity + "\t\t\t\t$" + item._price + "\t\t\t\t$"+(item._price*item._quantity)+"\n";
-  }
-  bodyCart += "Subtotal:\t\t\t$"+ngCart.getSubTotal()+"\n";
-  bodyCart += "Nitrogeno:\t\t$"+ngCart.getNitrogen()+"\n";
-  bodyCart += "Envio:\t\t\t$"+ngCart.getShipping()+"\n";
-  bodyCart += "IVA("+ ngCart.getTaxRate()+ "%):\t\t$"+ngCart.getTax()+"\n";
-  bodyCart += "TOTAL:\t\t\t$"+ngCart.totalCost()+"\n";
-
-  body = "Datos de comprador\n";
-  body+="--------------------------\n";
-  body += bodyUser;
-  body += "\n\nDatos de carrito\n";
-  body+="--------------------------\n";
-  body += bodyCart;
-  return body;
+    body = "Datos de comprador\n";
+    body+="--------------------------\n";
+    body += bodyUser;
+    body += "\n\nDatos de carrito\n";
+    body+="--------------------------\n";
+    body += bodyCart;
+    return body;
 }
 
   $scope.mail = function(){
     var link = "mailto:laslilas@gmail.com?subject=Nueva Compra&body=";
     link += encodeURIComponent(getBody());
-  //  console.log(link)
+    registroCantidadVentas.add();
+    misComprasFactory.add(ngCart.getCart(),ngCart.totalCost());
+    //  console.log(JSON.parse(localStorage.getItem('LLUsers')));
+    //  localStorage.setItem("rc2016_nombre",$scope.user.name);
+    //    localStorage.setItem("rc2016_email",$scope.user.email);
     window.location.href = link;
     ngCart.empty();
     window.location = "#/";
   }
-
   $scope.vaciar = function(){
     var r = confirm("Desea vaciar el carrito?");
       if (r == true) {
@@ -208,29 +224,22 @@ function getBody(){
       }
   }
 
-$scope.cantidad_carrito = ngCart.getTotalItems();
-
-
-  listar();
-
-  //listamos los pedidos
-  function listar(){
-    $scope.listado_ventas = registroVentas.list();
-
-    var returnArr = [];
-    angular.forEach($scope.listado_ventas, function(value,key) {
-      angular.forEach(value, function(value2,key2) {
-        value2.esteeselkeydelarray = key;
-        returnArr.push(value2);
+  $scope.cantidad_carrito = ngCart.getTotalItems();
+    listar();
+    function listar(){
+      var returnArr = [];
+      $scope.listado_ventas = registroVentas.list();
+      angular.forEach($scope.listado_ventas, function(value,key) {
+        angular.forEach(value, function(value2,key2) {
+          value2.esteeselkeydelarray = key;
+          returnArr.push(value2);
+        });
       });
-    });
-    $scope.listado_ventas = returnArr;
-
-    $scope.no_ventas = true;
-    if (returnArr.length >= 1){
-      $scope.no_ventas = false;
-    }
-
+      $scope.listado_ventas = returnArr;
+      $scope.no_ventas = true;
+      if (returnArr.length >= 1){
+        $scope.no_ventas = false;
+      }
   }
 
   //para eliminar ventas
@@ -240,60 +249,59 @@ $scope.cantidad_carrito = ngCart.getTotalItems();
     listar();
   }
 }]);
-
+aplicacion.controller('miscomprasCtrl',['$scope','misComprasFactory','registroCantidadVentas', function($scope,misComprasFactory,registroCantidadVentas){
+  var returnArr=[];
+   $scope.misCompras = misComprasFactory.list()
+   angular.forEach($scope.misCompras, function(value,key) {
+      if(value){
+        value.idArray = key;
+        returnArr.push(value);
+      }
+   });
+  $scope.misCompras = returnArr;
+  $scope.misComprasCount = $scope.misCompras.length;
+  $scope.date_format = function(date){
+    function pad(s) { return (s < 10) ? '0' + s : s; }
+    var d = new Date(date);
+    return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('/');
+  }
+  $scope.borrarCompra = function(key){
+    registroCantidadVentas.delete();
+    misComprasFactory.delete(key);
+    window.location.reload();
+  }
+}]);
 aplicacion.controller('navegacionCtrl',['$scope','registroCantidadVentas','registroCantidadFavoritos', function($scope,registroCantidadVentas,registroCantidadFavoritos){
-       $scope.ventasActuales = registroCantidadVentas.list();
-       $scope.favoritosActuales = registroCantidadFavoritos.list();
+  $scope.ventasActuales = registroCantidadVentas.list();
+  $scope.favoritosActuales = registroCantidadFavoritos.list();
 }]);
 
 aplicacion.controller('catalogoCtrl',['$scope','$location','$http', function($scope, $location,$http){
-    //localStorage.setItem("rc2016_firstime","0");
-     //localStorage.setItem("rc2016_nombre","");
-     //localStorage.setItem("rc2016_email","");
-    if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
-      $scope.loginview = true;
-      //var user = {};
-    //  localStorage.setItem('LLUsers',JSON.stringify(user));
-    } else {
-      $scope.loginview = false;
+  if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
+    $scope.loginview = true;
+  } else {
+    $scope.loginview = false;
+  }
+  $scope.submitForm = function() {
+    localStorage.setItem("rc2016_firstime","1");
+    var user = {
+      name:$scope.user.name,
+      tel:$scope.user.tel,
+      address:$scope.user.address,
+      city:$scope.user.city,
+      state:$scope.user.state,
+      cp:$scope.user.cp,
+      cuit:$scope.user.cuit,
+      social:$scope.user.social,
     }
-    /*
-        $scope.user.name='test';
-        $scope.user.tel='123123123';
-        $scope.user.address='direccintest';
-        $scope.user.city='ciudadtest';
-        $scope.user.state='provtest';
-        $scope.user.cp='123123';
-        $scope.user.cuit='123123123123';
-        $scope.user.social='razonTest';
-*/
-    $scope.submitForm = function() {
-    //  var oldUsers = JSON.parse(localStorage.getItem('LLUsers')) || [];
-      localStorage.setItem("rc2016_firstime","1");
-      var user = {
-        name:$scope.user.name,
-        tel:$scope.user.tel,
-        address:$scope.user.address,
-        city:$scope.user.city,
-        state:$scope.user.state,
-        cp:$scope.user.cp,
-        cuit:$scope.user.cuit,
-        social:$scope.user.social,
-      }
-      //oldUsers.push(user);
-      localStorage.setItem('LLUsers', JSON.stringify(user));
-    //  console.log(JSON.parse(localStorage.getItem('LLUsers')));
-    //  localStorage.setItem("rc2016_nombre",$scope.user.name);
-  //    localStorage.setItem("rc2016_email",$scope.user.email);
-      window.location.reload();
-    };
+    localStorage.setItem('LLUsers', JSON.stringify(user));
+    window.location.reload();
+  };
 
-    //$scope.status= 'test';
-    $http.get('razas.json').success(function(data){
-      $scope.razas = data;
-
-    });
-  }]);
+  $http.get('razas.json').success(function(data){
+    $scope.razas = data;
+  });
+}]);
 
 aplicacion.controller('subcatalogoCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope',
     function($scope, $routeParams, $http,$sce,$rootScope) {
@@ -333,7 +341,6 @@ aplicacion.controller('destacadosCtrl',['$scope', '$routeParams', '$http','$sce'
   }]);
 aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$rootScope','$filter','registroVentas','registroFavoritos','registroCantidadVentas','registroCantidadFavoritos',function($scope, $routeParams, $http,$sce,$rootScope,$filter,registroVentas,registroFavoritos,registroCantidadVentas,registroCantidadFavoritos) {
       $scope.id_toro = $routeParams.id_detalle;
-
       $http.get('laslilas.json').success(function(data){
         var found = $filter('getById')(data, $scope.id_toro);
         $scope.detalle = found;
