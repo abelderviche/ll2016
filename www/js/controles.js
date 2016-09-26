@@ -121,15 +121,32 @@ aplicacion.factory('registroFavoritos',function(){
 
   var itemsService = {};
 
+  itemsService.getItemById = function (itemId) {
+    //console.log(itemId.id);
+      var idToro = itemId.id;
+      var build = false;
+      angular.forEach(items, function (item) {
+        angular.forEach(item,function(it){
+          if  (idToro === it.id) {
+              build = item;
+          }
+        });
+          //if  (item.id === itemId.id) {
+        //      build = item;
+        //  }
+      });
+      return build;
+  };
+
   itemsService.add = function(detalle) {
-    var venta = {};
-    var nro_vta = localStorage.getItem("laslilas_nro_favoritos");
-    ventaid = nro_vta;
-    ventaid2 = "ventaid_" + nro_vta;
-    detalle.ventaidparaborrar = nro_vta;
-    venta[ventaid2] = detalle;
-    items.push(venta);
-    localStorage.setItem("laslilas_listado_favoritos",JSON.stringify(items));
+    var fav = itemsService.getItemById(detalle);
+    if(!fav){
+      var venta = {};
+      var nro = items.length;
+      venta[nro] = detalle;
+      items.push(venta);
+      localStorage.setItem("laslilas_listado_favoritos",JSON.stringify(items));
+    }
   };
 
   itemsService.delete = function(key) {
@@ -344,6 +361,13 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
       $http.get('laslilas.json').success(function(data){
         var found = $filter('getById')(data, $scope.id_toro);
         $scope.detalle = found;
+        var infav = registroFavoritos.getItemById($scope.detalle);
+        if(infav){
+          $scope.botones_favoritos = false;
+        }else{
+          $scope.botones_favoritos = true;
+        }
+        console.log($scope.botones_favoritos)
         if(found.avanzado){
           $scope.extra = "AVANZADO - " + found.avanzado;
         }
@@ -360,6 +384,7 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
           $scope.extra = "CONTROLADO - " + found.controlado;
         }
       });
+
       //boton carrito agrega pedido
       $scope.botones_venta = true;
       $scope.agregarVenta = function (count){
@@ -397,12 +422,18 @@ aplicacion.controller('detalleCtrl',['$scope', '$routeParams', '$http','$sce','$
         $scope.botones_venta_abajo = false;
       };
       //boton favoritos
-      $scope.botones_favoritos = true;
+
       $scope.agregarFavoritos = function (count){
-        registroCantidadFavoritos.add();
+        var infav = registroFavoritos.getItemById($scope.detalle);
         $scope.detalle.cantidad_favoritos = $scope.count;
         registroFavoritos.add($scope.detalle);
         $scope.botones_favoritos = false;
+        if(!infav){
+          registroCantidadFavoritos.add();
+        }
+
+      //  registroCantidadFavoritos.add();
+        //asdasdasdasdasd
       };
 
 }]);

@@ -131,34 +131,7 @@
 		,"ranking":0
 },
 
-{
-	"id": 6,
-	"nombre_toro":"Tiro al Blanco",
-	"nombre_raza":"angus_negro",
-	"nombre_raza_cat":"Angus Negro",
-	"destacado":1,
-	"imagen_toro":"img/tiroalblanco-top.jpg",
-	"imagen_toro2":"img/tiroalblanco-back.jpg",
-	"aptosvaquillonas":"18_meses",
-	"precio":"110",
 
-	"fn":"24/02/14",
-	"hba":"810323",
-	"senasa":"E/T",
-	"adn":"N240142",
-
-	"pan":"38 kg",
-	"pad":"349 kg",
-	"paf":"524 kg",
-	"frame":"4,2",
-	"ce":"42 cm",
-	"peso":"870 kg",
-	"descripcion1":"Es el mejor hijo de Apostado de su generación, sobre la 2410, la mejor hija de la 1920, donante de punta de Las Lilas. Muy sueltos desplazamientos, gran blandura de engorde y mantenimiento a campo.",
-	"descripcion2":"Tiene muy buena curva de crecimiento y sobresaliente CE, lo cual confirma su gran precocidad sexual.",
-	"descripcion3":" El toro más utilizado en nuestros planteles PC, en busca de imprimir sus muy buenos valores de crecimiento en un frame bien moderado."
-
-		,"ranking":1
-},
 
 {
 	"id": 7,

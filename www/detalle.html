@@ -32,7 +32,7 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
         </section>-->
 <!-- desde acá ABEL -->
 <section>
-<ngcart-addtocart id="{{ detalle.id }}" name="{{ detalle.nombre_toro }}" price="{{ detalle.precio }}" quantity="1" quantity-max="30" data="item"></ngcart-addtocart>
+<ngcart-addtocart ng-show="detalle.precio > 0" id="{{ detalle.id }}" name="{{ detalle.nombre_toro }}" price="{{ detalle.precio }}" quantity="1" quantity-max="30" data="item"></ngcart-addtocart>
 <div class="row grey lighten-3"  ng-if="detalle.precio === 0"style="padding:13px">
   <div class="col s6 color_lilas_texto" style="padding:15px">
     Consultar precio
@@ -93,15 +93,15 @@ Cat&aacute;logo > {{detalle.nombre_raza_cat}} > {{detalle.nombre_toro}}
           </div>
 
         <section class="compartir">
-          <div class="row center color_lilas_texto">
-            <div class="col s6" ng-click="agregarFavoritos(1)">
+          <div class="row center color_lilas_texto" style="margin:5px 0;">
+            <div class="col s12" ng-click="agregarFavoritos(1)">
               <a ng-show="botones_favoritos" class="btn-floating btn-large waves-effect waves-light pink darken-3"><i class="material-icons">star</i></a>
               <a ng-hide="botones_favoritos" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">star</i></a>
             </div>
 
-            <div class="col s6" ng-click="agregarVentaAbajo(1)">
+            <div class="col s6" ng-click="agregarVentaAbajo(1)" style="display:none;">
               <a href="mailto:laslilas@gmail.com?subject=Nueva Compra&body=Solicitud de nombre email %0A para el {{detalle.nombre_toro}} - {{detalle.nombre_raza}} %0A DOSIS ${{detalle.precio}} - Cantidad: {{count}} - Total: ${{detalle.precio * count}} (los precios no incluyen IVA) %0A www.laslilas.com/semen/{{detalle.nombre_toro | lowercase}}" class="btn-floating btn-large waves-effect waves-light pink darken-3" target="_blank" ng-show="botones_venta_abajo"><i class="material-icons">shopping_cart</i></a>
-      <a ng-hide="botones_venta_abajo" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">check</i></a>
+              <a ng-hide="botones_venta_abajo" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">check</i></a>
             </div>
           </div>
         </section>
