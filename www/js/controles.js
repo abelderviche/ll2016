@@ -292,6 +292,7 @@ aplicacion.controller('miscomprasCtrl',['$scope','misComprasFactory','registroCa
       }
    });
   $scope.misCompras = returnArr;
+  console.log($scope.misCompras);
   $scope.misComprasCount = $scope.misCompras.length;
   $scope.date_format = function(date){
     function pad(s) { return (s < 10) ? '0' + s : s; }
