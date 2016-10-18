@@ -39,6 +39,10 @@
               templateUrl : 'carrito.html',
               controller  : 'carritoCtrl'
           })
+          .when('/datoscompra', {
+              templateUrl : 'datoscompra.html',
+              controller  : 'carritoCtrl'
+          })
           .when('/favoritos', {
               templateUrl : 'favoritos.html',
               controller  : 'favoritosCtrl'

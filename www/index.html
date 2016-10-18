@@ -160,15 +160,15 @@
     });
 
       // datos formulario
-      if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
+    /*  if (localStorage.getItem("rc2016_firstime") === null || localStorage.getItem("rc2016_firstime") == "0") {
           $(".datos_form").hide();
       } else {
           $(".datos_form").show();
-          var user = JSON.parse(localStorage.getItem('LLUsers'));
-          $("#form_name").text(user.name);
-          $("#form_email").text(user.tel);
       }
-
+*/
+var user = JSON.parse(localStorage.getItem('LLUsers'));
+$("#form_name").text(user.name);
+$("#form_email").text(user.tel);
       //carrito
       /*if (localStorage.getItem("laslilas_nro_ventas") === null) {
         localStorage.setItem("laslilas_nro_ventas",0);

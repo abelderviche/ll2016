@@ -186,6 +186,22 @@ aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFac
   ngCart.setTaxRate(21.0);
   ngCart.setShipping(400.00);
   ngCart.setNitrogen(350.00);
+  var user = JSON.parse(localStorage.getItem('LLUsers'));
+  $scope.user = user;
+  $scope.submitForm = function() {
+    var user = {
+      name:$scope.user.name,
+      tel:$scope.user.tel,
+      address:$scope.user.address,
+      city:$scope.user.city,
+      state:$scope.user.state,
+      cp:$scope.user.cp,
+      cuit:$scope.user.cuit,
+      social:$scope.user.social,
+    }
+    localStorage.setItem('LLUsers', JSON.stringify(user));
+    $scope.mail();
+  }
 
   function getBody(){
     var body ="";
