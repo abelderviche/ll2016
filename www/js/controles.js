@@ -194,6 +194,9 @@ aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFac
   ngCart.setNitrogen(350.00);
   var user = JSON.parse(localStorage.getItem('LLUsers'));
   $scope.user = user;
+  $scope.closeFunction = function(){
+    navigator.app.exitApp();
+  }
   $scope.submitForm = function() {
     var user = {
       name:$scope.user.name,
@@ -240,7 +243,7 @@ aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFac
     body += bodyCart;
     return body;
 }
-
+  $scope.showClose = false;
   $scope.mail = function(){
     var link = "mailto:igarciafioretti@laslilas.com?subject=Nueva Compra&body=";
     link += encodeURIComponent(getBody());
@@ -251,7 +254,8 @@ aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFac
     //    localStorage.setItem("rc2016_email",$scope.user.email);
     window.location.href = link;
     ngCart.empty();
-    window.location = "#/gracias";
+    $scope.showClose = true;
+    //window.location = "#/gracias";
   }
   $scope.vaciar = function(){
     var r = confirm("Desea vaciar el carrito?");
