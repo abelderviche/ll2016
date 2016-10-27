@@ -43,6 +43,10 @@
               templateUrl : 'datoscompra.html',
               controller  : 'carritoCtrl'
           })
+          .when('/gracias', {
+              templateUrl : 'gracias.html',
+              controller  : 'graciasCtrl'
+          })
           .when('/favoritos', {
               templateUrl : 'favoritos.html',
               controller  : 'favoritosCtrl'

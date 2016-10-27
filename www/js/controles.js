@@ -182,6 +182,12 @@ aplicacion.factory('misComprasFactory',function(){
   return comprasService;
 });
 
+aplicacion.controller('graciasCtrl',['$scope','$location','$http', function($scope,$location,$http){
+  $scope.closeFunction = function(){
+    navigator.app.exitApp();
+  }
+}]);
+
 aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFactory','registroVentas','registroCantidadVentas','ngCart', function($scope,$location,$http,misComprasFactory,registroVentas,registroCantidadVentas,ngCart){
   ngCart.setTaxRate(21.0);
   ngCart.setShipping(400.00);
@@ -236,7 +242,7 @@ aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFac
 }
 
   $scope.mail = function(){
-    var link = "mailto:laslilas@gmail.com?subject=Nueva Compra&body=";
+    var link = "mailto:igarciafioretti@laslilas.com?subject=Nueva Compra&body=";
     link += encodeURIComponent(getBody());
     registroCantidadVentas.add();
     misComprasFactory.add(ngCart.getCart(),ngCart.totalCost());
@@ -245,7 +251,7 @@ aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFac
     //    localStorage.setItem("rc2016_email",$scope.user.email);
     window.location.href = link;
     ngCart.empty();
-    window.location = "#/";
+    window.location = "#/gracias";
   }
   $scope.vaciar = function(){
     var r = confirm("Desea vaciar el carrito?");
