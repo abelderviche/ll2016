@@ -245,7 +245,7 @@ aplicacion.controller('carritoCtrl',['$scope','$location','$http','misComprasFac
 }
   $scope.showClose = false;
   $scope.mail = function(){
-    var link = "mailto:igarciafioretti@laslilas.com?subject=Nueva Compra&body=";
+    var link = "mailto:ecommerce@laslilas.com?subject=Nueva Compra&body=";
     link += encodeURIComponent(getBody());
     registroCantidadVentas.add();
     misComprasFactory.add(ngCart.getCart(),ngCart.totalCost());
